@@ -1,0 +1,113 @@
+/**
+ * 2014-2025 IT PREMIUM OU
+ *
+ * NOTICE OF LICENSE
+ *
+ * This module is licensed for use on one single domain. To use this module on additional domains,
+ * you must purchase additional licenses. Redistribution, resale, leasing, licensing, or offering
+ * this resource to third parties is prohibited.
+ *
+ * The data used in this module, especially the complete database, may not be copied.
+ * It is strictly prohibited to duplicate the data and database and distribute the same,
+ * and/or instruct third parties to engage in such activities, without prior consent from TecAlliance.
+ * Any use of content in a manner not expressly authorized constitutes copyright infringement and violators will be prosecuted.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to https://www.prestashop.com for more information.
+ *
+ * @author IT PREMIUM OU <info@itpremium.net>
+ * @copyright  2014-2025 IT PREMIUM OU.
+ * @license Single Domain License
+ *
+ * PrestaShop and TecDoc are International Registered Trademarks, respective properties of PrestaShop SA and TecAlliance GmbH.
+ * IT PREMIUM OU is not associated with TecAlliance GmbH or PrestaShop SA and their services, all rights belong to their respective owners.
+ */
+
+/* Dashboard */
+#itp_tecdoc.widget .data_list_large {
+    margin-bottom: 0;
+}
+
+#itp_tecdoc.widget .data_list_large li {
+    padding: 10px 0;
+}
+
+#itp_tecdoc.widget .data_list_large .data_label {
+    color: #25b9d7;
+}
+
+#itp_tecdoc.widget .data_list_large .data_value {
+    padding: 14px 0 0;
+}
+
+/* Widgets form */
+#tecdoc_widget_form select[name="assembly_groups[]"],
+#tecdoc_widget_form select[name="manufacturers[]"],
+#tecdoc_widget_form select[name="brands[]"] {
+    height: 300px;
+}
+
+/* Import */
+.import-steps {
+    max-width: 700px;
+    margin: 0 auto 1rem auto;
+}
+
+.import-step {
+    display: flex;
+    align-items: center;
+}
+
+.import-step-name {
+    font-size: .875rem;
+}
+
+.import-step .import-step-number {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFF;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.import-step.active .import-step-number {
+    color: #FFF;
+    background-color: #F4A424;
+}
+
+.import-stats {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.import-stat {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.import-stat .import-stat-name {
+    font-size: 1rem;
+}
+
+.import-stat .import-stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.import-progress {
+    margin-top: 1rem;
+}
+
+.import-alerts .import-alert {
+    max-height: 200px;
+    overflow-x: auto;
+}

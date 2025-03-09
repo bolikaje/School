@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin980xbnlkolru1brbirk" source-language="ru-RU" target-language="ru-RU" datatype="plaintext">
+    <body>
+      <trans-unit id="8123c8ac806194dca71afdba4dad85a3">
+        <source>Generate sitemap</source>
+        <target>Generate sitemap</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6bde647b6cff84f1082a6aeca89946fe">
+        <source>Show facets for criteria</source>
+        <target>Show facets for criteria</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a7e6040880b0a9990460a74bd27ef1c8">
+        <source>Show facets for quality</source>
+        <target>Show facets for quality</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d1137159fa38a1de150e4fc3a23f6d76">
+        <source>Show facets for delivery</source>
+        <target>Show facets for delivery</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="340a434d04938fa7be47ff7388f6e4d5">
+        <source>Show facets for brands</source>
+        <target>Show facets for brands</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5742d54537cabf855bc74c46178a6056">
+        <source>Show facets for groups</source>
+        <target>Show facets for groups</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2729b6fcca80027d9839a295ee519141">
+        <source>Show facets count</source>
+        <target>Show facets count</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="71562c3a98bc8485ef117ab55e6372bb">
+        <source>Show facets</source>
+        <target>Show facets</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4c4fe7c3e01fcbc24c67221926050fe6">
+        <source>Show manufacturers logo</source>
+        <target>Show manufacturers logo</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2ed6eee809d6eec2c54e7ddef0657107">
+        <source>Define whether the alphabetical filter should be displayed in the front office.</source>
+        <target>Define whether the alphabetical filter should be displayed in the front office.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1b4e9c460246a9d82b5d2d9627f120f0">
+        <source>Show alphabetical filter</source>
+        <target>Show alphabetical filter</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d721757161f7f70c5b0949fdb6ec2c30">
+        <source>Theme</source>
+        <target>Theme</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9685ef1eb1b08810f35d860adf56921a">
+        <source>Available front office themes: %lb  %themes</source>
+        <target>Available front office themes: %lb  %themes</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9d55fc80bbb875322aa67fd22fc98469">
+        <source>Shop association</source>
+        <target>Shop association</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4333bc2f1d35f8869a00e00eda73a54f">
+        <source>Custom ID for the widget container.</source>
+        <target>Custom ID for the widget container.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="af3a625e5563c2d2c988c9f80d342c41">
+        <source>Custom ID</source>
+        <target>Custom ID</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c9cc9182916d2b4d022d0f93aaf776ad">
+        <source>Show options for linkage target types, such as passenger vehicles, commercial vehicles or motorcycles. If hidden, then first available linkage target type will be used as the default.</source>
+        <target>Show options for linkage target types, such as passenger vehicles, commercial vehicles or motorcycles. If hidden, then first available linkage target type will be used as the default.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0b9d4dcec69ea7185956a72355df51a0">
+        <source>Show linkage target types</source>
+        <target>Show linkage target types</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b718adec73e04ce3ec720dd11a06a308">
+        <source>ID</source>
+        <target>ID</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="49ee3087348e8d44e1feda1917443987">
+        <source>Name</source>
+        <target>Name</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="571094bb27864b600d8e6b561a137a55">
+        <source>Quality</source>
+        <target>Quality</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4d3d769b812b6faa6b76e1a8abaece2d">
+        <source>Active</source>
+        <target>Active</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="84be54bb4bd1b755a27d86388700d097">
+        <source>Brands</source>
+        <target>Brands</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="122a4d86f52bf28de25573e0b44327af">
+        <source>Edit brand - %s</source>
+        <target>Edit brand - %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7edd672615b1d837dc5284cb500a2b93">
+        <source>Brand quality</source>
+        <target>Brand quality</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435">
+        <source>Yes</source>
+        <target>Yes</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>No</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Save</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1be6f9eb563f3bf85c78b4219bf09de9">
+        <source>Brand</source>
+        <target>Brand</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca">
+        <source>Reference</source>
+        <target>Reference</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8b274d8b950dd74c6d0771d61b10316c">
+        <source>Cross brand</source>
+        <target>Cross brand</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2a9a554e83ca832af6c342c9bf64a011">
+        <source>Cross reference</source>
+        <target>Cross reference</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d3b206d196cd6be3a2764c1fb90b200f">
+        <source>Delete selected</source>
+        <target>Delete selected</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e25f0ecd41211b01c83e5fec41df4fe7">
+        <source>Delete selected items?</source>
+        <target>Delete selected items?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e76b449b9fc8536af7557ffa6321d269">
+        <source>Cross</source>
+        <target>Cross</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ec136b444eede3bc85639fac0dd06229">
+        <source>Supplier</source>
+        <target>Supplier</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="03937134cedab9078be39a77ee3a48a0">
+        <source>Group</source>
+        <target>Group</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="104d9898c04874d0fbac36e125fa1369">
+        <source>Discount</source>
+        <target>Discount</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ca0addd591aa9796ce1b9bf1818dc009">
+        <source>Price range start</source>
+        <target>Price range start</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9083c08b3cc49b3f58c1983b37b19db6">
+        <source>Price range end</source>
+        <target>Price range end</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="07cd25a3fff2c430d7a422f0e971552e">
+        <source>To create suppliers, please navigate to the relevant Suppliers section in the TecDoc module menu.</source>
+        <target>To create suppliers, please navigate to the relevant Suppliers section in the TecDoc module menu.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f3f5f6115ed80a48e286e595090dcbf8">
+        <source>Import entity</source>
+        <target>Import entity</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="20fe2ee5bac769e67818cc5b1608cf0d">
+        <source>Import method</source>
+        <target>Import method</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d61bef40fca068152fb4d8a566cfb47d">
+        <source>Truncate records</source>
+        <target>Truncate records</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ec53a8c4f07baed5d8825072c89799be">
+        <source>Status</source>
+        <target>Status</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="46ec237bfb524dd057e5325764aec70c">
+        <source>Latest import at</source>
+        <target>Latest import at</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="19af7711ee73b40a78f6bcdcdb301783">
+        <source>Please upload file.</source>
+        <target>Please upload file.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6a2a0caca4f6fe3282a7054facad3068">
+        <source>File url is required.</source>
+        <target>File url is required.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3372d3c40e8dfe55c3e1146741b8751c">
+        <source>FTP host is required.</source>
+        <target>FTP host is required.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7b288d3c99175556ad2f5d7792af0ad9">
+        <source>FTP post is required.</source>
+        <target>FTP post is required.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3a96c7b6e3c46005f080f3448d7b7afe">
+        <source>FTP username is required.</source>
+        <target>FTP username is required.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="11abb82c7e1d678a965b693c73740786">
+        <source>FTP password is required.</source>
+        <target>FTP password is required.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c92dc29dde365302790db69971ecf53a">
+        <source>FTP file url is required.</source>
+        <target>FTP file url is required.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0097624ecfcea26380f977b2b26841e7">
+        <source>Please match each column of your source file to one of the destination columns!</source>
+        <target>Please match each column of your source file to one of the destination columns!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3f942fbe194b460b8283fe4d8e636114">
+        <source>Step 1 - Import setup</source>
+        <target>Step 1 - Import setup</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="80ec2c8f0fcfd3c95fde37941029ea68">
+        <source>Choose which entity would you like to import.</source>
+        <target>Choose which entity would you like to import.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="adbda1becad8920705d17ab3d3a328bc">
+        <source>Upload import file</source>
+        <target>Upload import file</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="397393a28457540f32b7a759d94f1e99">
+        <source>Allowed extensions: .csv, .xml, .xls, .xlsx, .ods. Only UTF-8 encoding is allowed.</source>
+        <target>Allowed extensions: .csv, .xml, .xls, .xlsx, .ods. Only UTF-8 encoding is allowed.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="33d29b6a31318c189be128f74fa7e615">
+        <source>File url</source>
+        <target>File url</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9ef3ccd90f36873d62a48e1855927015">
+        <source>Specify full URL. E.g https://domain.com/example.csv.</source>
+        <target>Specify full URL. E.g https://domain.com/example.csv.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="33121e6f7743aee2840f5f222aab3a27">
+        <source>FTP host</source>
+        <target>FTP host</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="13aa2f1a9fd7f436efac69800a3e0838">
+        <source>URL should NOT be prefixed with ftp and should not have any trailing slashes. E.g ftp.domain.com</source>
+        <target>URL should NOT be prefixed with ftp and should not have any trailing slashes. E.g ftp.domain.com</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bdd5c4786695af78089e85f507e5643c">
+        <source>FTP port</source>
+        <target>FTP port</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="65560180b5a89db42abbd41aa0bdff25">
+        <source>Default FTP port is set to 21.</source>
+        <target>Default FTP port is set to 21.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2c953b27173542f40aa7cc966d71d7d7">
+        <source>FTP username</source>
+        <target>FTP username</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="98c601ec6353d6bd694c3e46e006a8a5">
+        <source>FTP password</source>
+        <target>FTP password</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="17bd8d04dcad806278c1d6dbbcc3df7a">
+        <source>FTP file</source>
+        <target>FTP file</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="689e29c7152b5b51d2cfebe207bb929b">
+        <source>Path to FTP file.</source>
+        <target>Path to FTP file.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9331ba9cad23c8a8d180914fdffbb984">
+        <source>Column separator</source>
+        <target>Column separator</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8dcf8192dc2b182d42477640bab29b20">
+        <source>XML entity path</source>
+        <target>XML entity path</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f126b491f46e798188a124a7734d42b1">
+        <source>Define path to iterable entity. E.g stock. Required for XML files.</source>
+        <target>Define path to iterable entity. E.g stock. Required for XML files.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7e65c60b23135a74eb1a304edb90760e">
+        <source>XML nodes</source>
+        <target>XML nodes</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9f7662ef0e2e1e588b0b3bc26696c222">
+        <source>XML nodes of iterable entity that represent attributes. Comma separated, nested elements allowed by slash. E.g price,availability/stock. Required for XML files.</source>
+        <target>XML nodes of iterable entity that represent attributes. Comma separated, nested elements allowed by slash. E.g price,availability/stock. Required for XML files.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d91446f5446498708bdd0e458688775c">
+        <source>Reference suffix</source>
+        <target>Reference suffix</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5bd3036649e5dd70827a733713313890">
+        <source>Reference suffix that must be stripped during import. E.g my_supplier_.</source>
+        <target>Reference suffix that must be stripped during import. E.g my_supplier_.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="645a2dfc62c5655f18e7223d23c5439b">
+        <source>Reference postfix</source>
+        <target>Reference postfix</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="67aa763cc8fb9b7678b16d15796ee51e">
+        <source>Reference postfix that must be stripped during import. E.g _my_supplier.</source>
+        <target>Reference postfix that must be stripped during import. E.g _my_supplier.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="482831fb91e3c54f0ef518527868bd10">
+        <source>Truncate all records</source>
+        <target>Truncate all records</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fa18f142ba1168b6263f3ab0ab274ca2">
+        <source>Truncate all records for selected entity before starting an import.</source>
+        <target>Truncate all records for selected entity before starting an import.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c290a5941ad6eb0d5fe8752c15c5fd78">
+        <source>Next step</source>
+        <target>Next step</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f185a1cf3b266da344e18128a66c7fb6">
+        <source>Import file is missing!</source>
+        <target>Import file is missing!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2a20e74aa76fff922b2e619acc1e66e7">
+        <source>Import file cannot be loaded.</source>
+        <target>Import file cannot be loaded.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="31ebbc1daa501feb69001df466e1c999">
+        <source>Step 2 - Mapping settings</source>
+        <target>Step 2 - Mapping settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3b057f0f92ac8d274701c269ac00c5fa">
+        <source>Rows to skip</source>
+        <target>Rows to skip</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="60259ebbc71905281532554466d008f3">
+        <source>Define how many rows should be skipped during import process.</source>
+        <target>Define how many rows should be skipped during import process.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8a6415cf7a9da3f8afe213b8f56de67c">
+        <source>Column mapping</source>
+        <target>Column mapping</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b57c65765351dc8ee9fcf2a9b28ab3a6">
+        <source>Previous Step</source>
+        <target>Previous Step</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="38f9219943532a147708e56bb480b439">
+        <source>Import file is missing.</source>
+        <target>Import file is missing.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fe472688a3dd2cea121fed1d914102f5">
+        <source>Column mapping is invalid.</source>
+        <target>Column mapping is invalid.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2377be3c2ad9b435ba277a73f0f1ca76">
+        <source>Manufacturers</source>
+        <target>Manufacturers</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="98369609669478919c74c916440e9978">
+        <source>Margin</source>
+        <target>Margin</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c804723ccdde3d7a46933b208c6f928d">
+        <source>Wholesale price</source>
+        <target>Wholesale price</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3601146c4e948c32b6424d2c0a7f0118">
+        <source>Price</source>
+        <target>Price</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c612bf4e7b59c1b364ead6752fe63ed3">
+        <source>Minimum order quantity</source>
+        <target>Minimum order quantity</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="27ce7f8b5623b2e2df568d64cf051607">
+        <source>Stock</source>
+        <target>Stock</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7320268d3e6def915f7a462afd0e5738">
+        <source>Delivery time</source>
+        <target>Delivery time</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4170c5eeb9036af162d770cfc5ca9c92">
+        <source>If Custom Articles are enabled, this name can be used as the article name.</source>
+        <target>If Custom Articles are enabled, this name can be used as the article name.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2446bb5482cd7d0082beb11fcc44aa88">
+        <source>Price without tax.</source>
+        <target>Price without tax.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="92f80bd57592af65188ca27786514cca">
+        <source>Deposit</source>
+        <target>Deposit</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="203ccbbad236ab8d898f3936e4862309">
+        <source>If a deposit is required for this stock record, you can specify it here. Without tax.</source>
+        <target>If a deposit is required for this stock record, you can specify it here. Without tax.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="de174db968223cad97ae0f5051fec8a5">
+        <source>Please specify the minimum quantity for ordering.</source>
+        <target>Please specify the minimum quantity for ordering.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="96343be8161cf01974a328ad8774494c">
+        <source>Enforce quantity multiple</source>
+        <target>Enforce quantity multiple</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9503ce3c78f5a92360fc5e4737c74a7e">
+        <source>When this option is enabled, the quantity of the product must be a multiple of the specified minimum order quantity. If this option is turned off, there are no such restrictions, and customers can order any amount exceeding the minimum quantity. For instance, if the minimum order quantity is set to 2 and this option is turned on, customers can only order in quantities of 2, 4, 6, and etc.</source>
+        <target>When this option is enabled, the quantity of the product must be a multiple of the specified minimum order quantity. If this option is turned off, there are no such restrictions, and customers can order any amount exceeding the minimum quantity. For instance, if the minimum order quantity is set to 2 and this option is turned on, customers can only order in quantities of 2, 4, 6, and etc.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a6b5a89e174c013091d233cf5afb9681">
+        <source>Please specify the maximum delivery time in days.</source>
+        <target>Please specify the maximum delivery time in days.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8c489d0946f66d17d73f26366a4bf620">
+        <source>Weight</source>
+        <target>Weight</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="792c7e5efa000ff32958585ac8255f01">
+        <source>This weight will be added to the PrestaShop product and can be used for future shipping calculations.</source>
+        <target>This weight will be added to the PrestaShop product and can be used for future shipping calculations.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4dbd00e25b3cdb095ded24a65cc7b94c">
+        <source>OEM</source>
+        <target>OEM</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d">
+        <source>Email</source>
+        <target>Email</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bcc254b55c4a1babdf1dcb82c207506b">
+        <source>Phone</source>
+        <target>Phone</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dd7bf230fde8d4836917806aff6a6b27">
+        <source>Address</source>
+        <target>Address</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d274013ea65428454962a59b7b373a41">
+        <source>Public name</source>
+        <target>Public name</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b9b371458ab7c314f88b81c553f6ce51">
+        <source>Hook</source>
+        <target>Hook</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a1fa27779242b4902f7ae3bdd5c6d508">
+        <source>Type</source>
+        <target>Type</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="52f5e0bc3859bc5f5e25130b6c7e8881">
+        <source>Position</source>
+        <target>Position</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6ed562a0d4381eef12d92c87520f3208">
+        <source>Widget</source>
+        <target>Widget</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6571beed198e41cbd4ffb52f6219b54a">
+        <source>The internal name for this widget.</source>
+        <target>The internal name for this widget.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e0c7a0c490094a63a3bd2fdc040d293b">
+        <source>The public name for this widget, may be visible on the front office.</source>
+        <target>The public name for this widget, may be visible on the front office.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="abbd64f40c34c537d3a571af068fce29">
+        <source>Orientation</source>
+        <target>Orientation</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5ead1e5db7de6204664efeba963658f3">
+        <source>Manufactures</source>
+        <target>Manufactures</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7313a2d878fd877502e750fd6e680220">
+        <source>Choose manufacturers to display in this widget. Hold CTRL to select multiple.</source>
+        <target>Choose manufacturers to display in this widget. Hold CTRL to select multiple.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7d43cedd6aea14b3ab96a4561b2cfd88">
+        <source>Choose brands to display in this widget. Hold CTRL to select multiple.</source>
+        <target>Choose brands to display in this widget. Hold CTRL to select multiple.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b850e6065d75eb3e66b1a1449b34d4bd">
+        <source>Custom HTML content</source>
+        <target>Custom HTML content</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ca50c06475296d0be9139f99c4d7619b">
+        <source>Custom CSS class</source>
+        <target>Custom CSS class</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b3137c1de2f624de66c8dad7c0dc196c">
+        <source>CSS style for the widget container.</source>
+        <target>CSS style for the widget container.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="733a13dde9b2d82bb0e229e0d9e1fdd4">
+        <source>Show public name</source>
+        <target>Show public name</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f85785b3a95f346e09bca0a52c3775ec">
+        <source>Show public name on the front office.</source>
+        <target>Show public name on the front office.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a5e7863a023d1227234cffbd3a04764b">
+        <source>TecDoc module</source>
+        <target>TecDoc module</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fa5b9efddbf870937f01da29229d0685">
+        <source>TecDoc module for PrestaShop. This module integrates with the official TecAlliance TecDoc API.</source>
+        <target>TecDoc module for PrestaShop. This module integrates with the official TecAlliance TecDoc API.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b22816142e0295d140f180ebaff81ef0">
+        <source>Module is not fully configured. Please update module settings!</source>
+        <target>Module is not fully configured. Please update module settings!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8b144ffc87beff564884b1c190275539">
+        <source>Select country</source>
+        <target>Select country</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="653777801f96237326d65205bc9129e3">
+        <source>Select language</source>
+        <target>Select language</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6adf97f83acf6453d4a6a4b1070f3754">
+        <source>None</source>
+        <target>None</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="62ba3f5f041a2640086dbd60cdd0a98d">
+        <source>The language code must be supported by the TecDoc web service. The module will attempt to match the available languages from the TecDoc web service with the currently selected language. If a match is not found, the default language code will be used as a fallback.%lb%lbAvailable language codes: %lb  %languages</source>
+        <target>The language code must be supported by the TecDoc web service. The module will attempt to match the available languages from the TecDoc web service with the currently selected language. If a match is not found, the default language code will be used as a fallback.%lb%lbAvailable language codes: %lb  %languages</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1b8b66551408349bde9805bb25bd586b">
+        <source>The language code must be supported by the TecDoc web service. The module will attempt to match the available languages from the TecDoc web service with the currently selected language. If a match is not found, the default language code will be used as a fallback.</source>
+        <target>The language code must be supported by the TecDoc web service. The module will attempt to match the available languages from the TecDoc web service with the currently selected language. If a match is not found, the default language code will be used as a fallback.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="52242cecfa59461d3fe0912c7e55ec15">
+        <source>TecDoc web service API settings</source>
+        <target>TecDoc web service API settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7b6800bc8e72191deed0e4c40b6dbb81">
+        <source>Warning! TecDoc web service API setup is not completed!</source>
+        <target>Warning! TecDoc web service API setup is not completed!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="098349ace768f265b8d927127896f554">
+        <source>Provider ID</source>
+        <target>Provider ID</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1febe26d664a23d3fa5a8a61f1168d65">
+        <source>To specify the Provider ID for the TecDoc web service, please provide the relevant ID obtained from TecAlliance.</source>
+        <target>To specify the Provider ID for the TecDoc web service, please provide the relevant ID obtained from TecAlliance.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="656a6828d7ef1bb791e42087c4b5ee6e">
+        <source>API key</source>
+        <target>API key</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6566772a5919f27605d09e9596019e33">
+        <source>To specify the API key for the TecDoc web service, please provide the relevant API key obtained from TecAlliance.</source>
+        <target>To specify the API key for the TecDoc web service, please provide the relevant API key obtained from TecAlliance.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="59716c97497eb9694541f7c3d37b1a4d">
+        <source>Country</source>
+        <target>Country</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="154432c4f94b42c7204bb599219da5b9">
+        <source>Please select the country for the TecDoc web service. To obtain a list of available countries, please click the "Update countries" button below. Make sure to provide the provider ID and API key before proceeding.</source>
+        <target>Please select the country for the TecDoc web service. To obtain a list of available countries, please click the "Update countries" button below. Make sure to provide the provider ID and API key before proceeding.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fbcd41416fcdc2495112addfc9e7dcec">
+        <source>Default language code</source>
+        <target>Default language code</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6b84e55f10a67e77a0f6f8589572dff0">
+        <source>Cache API responses</source>
+        <target>Cache API responses</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fa2a5b56ed0de2a223c6f39e2aa6bffe">
+        <source>Cache API responses to improve performance. Cache expiration is set at 6 hours. Please keep in mind that caching might consume a significant amount of disk space on your server. To clear cache, please click on the Clear Api Cache button below. For automatic cache clearing, set up a CRON task as described in the "Scheduled Task Setup" section.</source>
+        <target>Cache API responses to improve performance. Cache expiration is set at 6 hours. Please keep in mind that caching might consume a significant amount of disk space on your server. To clear cache, please click on the Clear Api Cache button below. For automatic cache clearing, set up a CRON task as described in the "Scheduled Task Setup" section.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9c9f2ad446588216d62d5ffdda3a64b2">
+        <source>Check web service connection</source>
+        <target>Check web service connection</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="01dcb53c23a523459cb9c332bbcfaf3e">
+        <source>Update countries</source>
+        <target>Update countries</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="24fae2e56bd830c439ce0a84658938b6">
+        <source>Update languages</source>
+        <target>Update languages</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="057f22a6dedb4bd77bff14e43f624692">
+        <source>Clear API cache</source>
+        <target>Clear API cache</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8103112e88495d4caaa29312e5e29314">
+        <source>Main settings</source>
+        <target>Main settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="53be17091c8d227856d2b29f115048e3">
+        <source>Warning! Module setup is not completed!</source>
+        <target>Warning! Module setup is not completed!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="955e6ee49b4b79ac75985687df22863f">
+        <source>Default catalog category</source>
+        <target>Default catalog category</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="633271264d97717fc5adeb3435a9e181">
+        <source>Prestashop category for TecDoc module.</source>
+        <target>Prestashop category for TecDoc module.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="edc7ec878a918df62445b7f1a94d836c">
+        <source>Tax rules group</source>
+        <target>Tax rules group</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0a5ae3f4c18f72e8b7642557e39361a2">
+        <source>Tax rules group for TecDoc Articles.</source>
+        <target>Tax rules group for TecDoc Articles.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="34ee9d1dbdc9ac8794095d94e39efd6a">
+        <source>Manufacturers settings</source>
+        <target>Manufacturers settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="beb30ce816a4a301f116c482c1af5d8b">
+        <source>Define whether the manufacturer's logo should be displayed in the front office.</source>
+        <target>Define whether the manufacturer's logo should be displayed in the front office.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f7247b1222e271f0173bce8a2a6169ca">
+        <source>Model series settings</source>
+        <target>Model series settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="631c85cd1ac9180fe1162f0c7549f1ca">
+        <source>Minimal model year</source>
+        <target>Minimal model year</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b6a6f3a08865c719e3a617bb8a7258ae">
+        <source>Please note that some models in TecDoc may have incomplete information about their manufacturing date. Such models will not be filtered out.</source>
+        <target>Please note that some models in TecDoc may have incomplete information about their manufacturing date. Such models will not be filtered out.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4aba1adee655a097a7a24f04cda2231d">
+        <source>Group model series</source>
+        <target>Group model series</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5a5c362a9e8de89ecb76636be6761473">
+        <source>This feature is currently in an experimental state and may yield inaccurate results.</source>
+        <target>This feature is currently in an experimental state and may yield inaccurate results.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="103eda910caea278959b9d21cfc8254c">
+        <source>Vehicles settings</source>
+        <target>Vehicles settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="283d3b2b919ad0723ae4952d66ea4878">
+        <source>Show passenger vehicles</source>
+        <target>Show passenger vehicles</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c8beb79a7397dd6a546841fab1ffe7b8">
+        <source>Show commercial vehicles</source>
+        <target>Show commercial vehicles</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c50811ecc44afe62e8b06a2f9b616ef6">
+        <source>Show motorcycles</source>
+        <target>Show motorcycles</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="87ecef42f39edee073c3d5cacd59e5e2">
+        <source>Articles settings</source>
+        <target>Articles settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="89d39e30ed8c33b9d99472d0aea325c4">
+        <source>Show assembly groups</source>
+        <target>Show assembly groups</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="60165697d50d938fe9e7f46d9b967028">
+        <source>Show nested assembly groups on article listing.</source>
+        <target>Show nested assembly groups on article listing.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ae777f33c749a1882eb73d0179513cc8">
+        <source>Search number type</source>
+        <target>Search number type</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0d3dfe2f2a524e09685a3979ef31dcf1">
+        <source>Define article search number type.</source>
+        <target>Define article search number type.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b445214aa94847ca443cb5d18ecd872a">
+        <source>Deposit product name</source>
+        <target>Deposit product name</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="279f82a244f58ccd064653c6fa77ab3f">
+        <source>Name for deposit product.</source>
+        <target>Name for deposit product.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="97411107df56ab670c23d07da3e434ad">
+        <source>Articles per page</source>
+        <target>Articles per page</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e3e96f5aa78f235b067f02366a405e9a">
+        <source>Number of articles displayed per page.</source>
+        <target>Number of articles displayed per page.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7020e1ded2f61a97715d7a9dd25fc822">
+        <source>Include customer groups discount</source>
+        <target>Include customer groups discount</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f8aaa1fce94266a711119c2f6c906806">
+        <source>Integrate the discount rates of customer groups into the calculation of article prices.</source>
+        <target>Integrate the discount rates of customer groups into the calculation of article prices.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6d71a9789d72ca1a0bef320bd59033e7">
+        <source>Show custom articles</source>
+        <target>Show custom articles</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b147cea258a495686ee76e2ef3bb13f8">
+        <source>Custom articles are created from stock records. With this option, you can generate stock records for articles that do not exist in TecDoc, and they will be displayed in the search results.</source>
+        <target>Custom articles are created from stock records. With this option, you can generate stock records for articles that do not exist in TecDoc, and they will be displayed in the search results.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3a940fff86de3d9f91c082bd0489c081">
+        <source>Sync stock quantities with order statuses</source>
+        <target>Sync stock quantities with order statuses</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6f50564eca67584a37babfbf2fda582f">
+        <source>Based on order status, increment or decrement quantity value of stock record.</source>
+        <target>Based on order status, increment or decrement quantity value of stock record.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="825a5178e5ddf7a278dedaeb89728ee0">
+        <source>Show articles without availability</source>
+        <target>Show articles without availability</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="21aaf24ab543c524de734ed2d8315cc5">
+        <source>Allow availability requests</source>
+        <target>Allow availability requests</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1137badcb53cd9fa9a9bf683a2929bed">
+        <source>Allow availability requests for articles even without available stock.</source>
+        <target>Allow availability requests for articles even without available stock.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7346b51fb95875c3846775590f784fcd">
+        <source>E-mail for availability requests</source>
+        <target>E-mail for availability requests</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3a318cccbcf4e6cd3dfeaf82f56e1510">
+        <source>Facets settings</source>
+        <target>Facets settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a4ca25b1078fe2d865ba6d474a1146c4">
+        <source>Ensure that you set up the quality for Brands on the Brands page.</source>
+        <target>Ensure that you set up the quality for Brands on the Brands page.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9bef137116f97591ede209dc4453b202">
+        <source>reCAPTCHA v3 settings</source>
+        <target>reCAPTCHA v3 settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d8922b15a11a4951206056c9b3e4c238">
+        <source>Enable reCAPTCHA v3</source>
+        <target>Enable reCAPTCHA v3</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="33985c5a70b5d9b4d316ca2e860f60bd">
+        <source>Enable reCAPTCHA v3 for the availability request form.</source>
+        <target>Enable reCAPTCHA v3 for the availability request form.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f75d8fa5c89351544d372cf90528ccf2">
+        <source>Site key</source>
+        <target>Site key</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9e27970fc0c39b20003890e3c0f5a552">
+        <source>Please ensure you provide valid credentials for the form to function correctly.</source>
+        <target>Please ensure you provide valid credentials for the form to function correctly.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="952bf87c967660b7bbd4e1eb08cefc92">
+        <source>Secret key</source>
+        <target>Secret key</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="32c58a2d323bfccea368e4fadf911a53">
+        <source>Obtain your Site Key and Secret Key from the Google reCAPTCHA Admin Console.</source>
+        <target>Obtain your Site Key and Secret Key from the Google reCAPTCHA Admin Console.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a9c97f16b487436d300e7b1011a0f67d">
+        <source>SEO settings - General</source>
+        <target>SEO settings - General</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b51702b66adecd7b82ef4850db2db62a">
+        <source>Warning! Module SEO setup is not completed!</source>
+        <target>Warning! Module SEO setup is not completed!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c25d750d2eddb83507fc2ba18fa78782">
+        <source>Module URL</source>
+        <target>Module URL</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3c7bfda5dbec8ca6d29aa7881957b4e1">
+        <source>E.g spare-parts.</source>
+        <target>E.g spare-parts.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="face02b00dc1e598a4d484878a9d3b22">
+        <source>Determine if the sitemap for TecDoc pages should be generated using the gsitemap module. To include articles, ensure the Show custom articles option is enabled. Please be aware that this process might take several hours, and the API cache will be enabled for this task.</source>
+        <target>Determine if the sitemap for TecDoc pages should be generated using the gsitemap module. To include articles, ensure the Show custom articles option is enabled. Please be aware that this process might take several hours, and the API cache will be enabled for this task.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="41a5408a6fd5e2e87877d012847a9b7c">
+        <source>SEO settings - Manufacturers page</source>
+        <target>SEO settings - Manufacturers page</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9e11e4b371570340ca07913bc4783a7a">
+        <source>Meta title</source>
+        <target>Meta title</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3f64b2beede1082fd32ddb0bf11a641f">
+        <source>Meta description</source>
+        <target>Meta description</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d63bdd0d24528db180520c6d0fbadd09">
+        <source>Route rule</source>
+        <target>Route rule</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="037c2dc717b73f6d992cde2bf3515213">
+        <source>SEO settings - Model series page</source>
+        <target>SEO settings - Model series page</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bdfc879f57007a4e5dc2d30babc45cf3">
+        <source>Available variables: %s</source>
+        <target>Available variables: %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2b665aafd8b417a570ce350e28586e01">
+        <source>SEO settings - Vehicles page</source>
+        <target>SEO settings - Vehicles page</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0669defbec4ae7909db08a572e84f6d7">
+        <source>SEO settings - Assembly groups page</source>
+        <target>SEO settings - Assembly groups page</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c3c411bda6ccf5d51ec664663684c213">
+        <source>SEO settings - Articles page</source>
+        <target>SEO settings - Articles page</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="53f7c0b51d14a8d9ece8dfd29831f53e">
+        <source>SEO settings - Article page</source>
+        <target>SEO settings - Article page</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e86fd1e6d57223efb08997f44a356987">
+        <source>SEO settings - Custom article page</source>
+        <target>SEO settings - Custom article page</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6525e9283f5daf6bbb5c4db46998b9e2">
+        <source>Action successfully performed.</source>
+        <target>Action successfully performed.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="70c35251d56f50a1863afba43baedc93">
+        <source>Keyword {%keyword%} required for %controllerName% route</source>
+        <target>Keyword {%keyword%} required for %controllerName% route</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6e9449b7edde7994abf4d067814d04dd">
+        <source>Web service connection unsuccessful. Status code: %s. Status text: %s.</source>
+        <target>Web service connection unsuccessful. Status code: %s. Status text: %s.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="945e5174ac2120a2bbfbb44d6718249d">
+        <source>Web service connection successful. Version info: Build date %s. Build version %s</source>
+        <target>Web service connection successful. Version info: Build date %s. Build version %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="86d314b39d91d9c8f4578c938e4401d6">
+        <source>Keywords: %keywords%</source>
+        <target>Keywords: %keywords%</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b724560f8ee934e54152705c9eb37f22">
+        <source>TecDoc Revenue</source>
+        <target>TecDoc Revenue</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="15e03a62167d5bbb0d520737ad7d6a74">
+        <source>%s% tax excl.</source>
+        <target>%s% tax excl.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="73f48602d6bd65a21e0e17e88a4acc1b">
+        <source>Perform import</source>
+        <target>Perform import</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b8ae1e70026d86b18fda3e5ebf2b90bd">
+        <source>Mapping settings</source>
+        <target>Mapping settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="93e28b71ccc2c852dd1fc2259bd8a4dd">
+        <source>TecDoc module for PrestaShop</source>
+        <target>TecDoc module for PrestaShop</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f1c33e3105c8c5d30a4cb427f802f2c4">
+        <source>This module integrates with the official TecAlliance TecDoc API.</source>
+        <target>This module integrates with the official TecAlliance TecDoc API.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e3ce596d5229670bbc4bf39e1b4d7c30">
+        <source>You are required to have an active agreement with TecAlliance; otherwise, the module will not work. To obtain your API keys, please get in touch with your TecAlliance sales manager.</source>
+        <target>You are required to have an active agreement with TecAlliance; otherwise, the module will not work. To obtain your API keys, please get in touch with your TecAlliance sales manager.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="089c85583889e7cfbac8a5a3ed72d51c">
+        <source>Download module documentation</source>
+        <target>Download module documentation</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c1abf0983b4c911958b86765231ac728">
+        <source>Sections of a configuration</source>
+        <target>Sections of a configuration</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="71febf8b65f9145a1fbe08ab72364839">
+        <source>SEO settings</source>
+        <target>SEO settings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d945ed3fbdfd38e956e6e0c178687a49">
+        <source>Scheduled tasks (CRON) setup</source>
+        <target>Scheduled tasks (CRON) setup</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8311b94034624c118d8f0aeedc6a550e">
+        <source>The module allows you to set up scheduled tasks for the supported actions listed below. You can use HTTP calls or the Command-Line Interface (CLI) to schedule these tasks.</source>
+        <target>The module allows you to set up scheduled tasks for the supported actions listed below. You can use HTTP calls or the Command-Line Interface (CLI) to schedule these tasks.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a36c3b9d6dcf5bfec7581ec33e037d51">
+        <source>1. Clear API Cache (clear-api-cache)</source>
+        <target>1. Clear API Cache (clear-api-cache)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ca6e7c919ae37ee8658eca34041290db">
+        <source>Please turn on the "Cache API responses" option in the TecDoc web service API settings section before creating a CRON job for this action.</source>
+        <target>Please turn on the "Cache API responses" option in the TecDoc web service API settings section before creating a CRON job for this action.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1341a736a451965908c1ae8619c516fe">
+        <source><![CDATA[For HTTP - %s&action=%s]]></source>
+        <target><![CDATA[For HTTP - %s&action=%s]]></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="145c10f760fafcb2cb7027aaa934d943">
+        <source>For Command-Line Interface - php %s --action=%s</source>
+        <target>For Command-Line Interface - php %s --action=%s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3edcb2abfec07b7e86d1e8d863e9d534">
+        <source>2. Delete cached products (delete-cached-products)</source>
+        <target>2. Delete cached products (delete-cached-products)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cfec708e1f7545a165c951d0fca62b1e">
+        <source>This module utilizes PrestaShop's database to cache data for TecDoc products, custom articles, and deposit products. Storing these products locally is essential for the cart system to function correctly. While these cached products are not visible anywhere, they do occupy space in your database.</source>
+        <target>This module utilizes PrestaShop's database to cache data for TecDoc products, custom articles, and deposit products. Storing these products locally is essential for the cart system to function correctly. While these cached products are not visible anywhere, they do occupy space in your database.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="677473dc477e3e60e5f4cb11a0650623">
+        <source>Products in carts that haven't been ordered will not be deleted.</source>
+        <target>Products in carts that haven't been ordered will not be deleted.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b8495b50f5c172ebad1cc5c615548afa">
+        <source>Ignore this column</source>
+        <target>Ignore this column</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="31ce3cdcd67850870b616f75b555bbc5">
+        <source>Default value</source>
+        <target>Default value</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="eb2cbde63b8a1ef76774c565da99a39a">
+        <source>Step 3 - Import</source>
+        <target>Step 3 - Import</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f987210996eca1f983b48685218ee311">
+        <source>Import successfuly completed!</source>
+        <target>Import successfuly completed!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e4dcdb9c8525e1394c08a1e9d545f06e">
+        <source>Records found</source>
+        <target>Records found</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bb047570a2b85a9dd7cdcfbf56ed3710">
+        <source>Records proccesed</source>
+        <target>Records proccesed</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="251b40118b5e0f9f1732afe8d024a966">
+        <source>Truncated records</source>
+        <target>Truncated records</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e17fdb615452f440c793b5ddad90dd5e">
+        <source>Warnings</source>
+        <target>Warnings</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5ef0c737746fae2ca90e66c39333f8f6">
+        <source>Errors</source>
+        <target>Errors</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b1ab0f2d6b71b0849103e97960036e7f">
+        <source>Previous step</source>
+        <target>Previous step</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="aaabfd317d76a7cf42f993faa1970aa0">
+        <source>Start import</source>
+        <target>Start import</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dc3605561a83064de283d1ee293ce237">
+        <source>Import setup</source>
+        <target>Import setup</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0014f8b96d996135614c21355a053994">
+        <source>Mapping</source>
+        <target>Mapping</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="72d6d7a1885885bb55a565fd1070581a">
+        <source>Import</source>
+        <target>Import</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0c2d507a9be57c78e36b3b47e42eec8b">
+        <source>TecDoc sales</source>
+        <target>TecDoc sales</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7442e29d7d53e549b78d93c46b8cdcfc">
+        <source>Orders</source>
+        <target>Orders</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1b4b18da532259cdcca5d05b84a24bdf">
+        <source>Orders with TecDoc products</source>
+        <target>Orders with TecDoc products</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="54358a914f51e1af19df8520159fe607">
+        <source>Revenue</source>
+        <target>Revenue</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="befcac0f9644a7abee43e69f49252ac4">
+        <source>Tax excluded</source>
+        <target>Tax excluded</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f4a0d7cb0cd45214c8ca5912c970de13">
+        <source>Tax included</source>
+        <target>Tax included</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b0766a77fa7f05dabdcfcc37bbaf3ad5">
+        <source>Tecdoc Supplier:</source>
+        <target>Tecdoc Supplier:</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

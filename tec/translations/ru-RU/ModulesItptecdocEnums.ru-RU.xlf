@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin980xbnlkolru1brbirk" source-language="ru-RU" target-language="ru-RU" datatype="plaintext">
+    <body>
+      <trans-unit id="12dec45640890427c5c7b6b7c6eb0261">
+        <source>Modern (recommended) - Inspired by the upcoming Hummingbird theme, this option features a clean and contemporary design.</source>
+        <target>Modern (recommended) - Inspired by the upcoming Hummingbird theme, this option features a clean and contemporary design.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c8fb12b8ba28bbf0a97bb1a4cc30bd00">
+        <source>Classic - Based on PrestaShop's default design, this theme works well with colored body backgrounds and offers a simple, familiar look.</source>
+        <target>Classic - Based on PrestaShop's default design, this theme works well with colored body backgrounds and offers a simple, familiar look.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ad1c9cd3e7b07e2c364c985f73188054">
+        <source>Modern</source>
+        <target>Modern</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d35b51b639528d580362ca7042de6a0e">
+        <source>Classic</source>
+        <target>Classic</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6adf97f83acf6453d4a6a4b1070f3754">
+        <source>None</source>
+        <target>Нет</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8afc1f2760cfc2d63b8f0e9ddb1b6f39">
+        <source>Economy</source>
+        <target>Эконом</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="87f8a6ab85c9ced3702b4ea641ad4bb5">
+        <source>Medium</source>
+        <target>Средний</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8d5e7e72f12067991186cdf3cb7d5d9d">
+        <source>Premium</source>
+        <target>Премиум</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4dbd00e25b3cdb095ded24a65cc7b94c">
+        <source>OEM</source>
+        <target>OEM</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="27ce7f8b5623b2e2df568d64cf051607">
+        <source>Stock</source>
+        <target>Наличие</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1814d65a76028fdfbadab64a5a8076df">
+        <source>Suppliers</source>
+        <target>Поставщики</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c4265549c1f4d79aea1e279149a6a084">
+        <source>File upload</source>
+        <target>Загрузка файла</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b5d7fb8fde925c327be4ed3becec2fb9">
+        <source>Download from URL</source>
+        <target>Скачать с URL</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9d35855ec0141cd70fb157e0f33ee820">
+        <source>Download from FTP</source>
+        <target>Скачать с FTP</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b151fb34193a4a0ae71e00013c06b1e3">
+        <source>Not imported</source>
+        <target>Не импортировано</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="858a2b552953bc182248fe9374646398">
+        <source>Imported</source>
+        <target>Импортировано</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d7c8c85bf79bbe1b7188497c32c3b0ca">
+        <source>Failed</source>
+        <target>Неуспешно</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fdb9407b3db5653e700453d4a463f4b1">
+        <source>Passenger vehicles</source>
+        <target>Легковой транспорт</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d259099230ca00a5451f0d5fd42982ea">
+        <source>Commercial vehicles</source>
+        <target>Коммерческий транспорт</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f9eced7271ace37eae7270210b2bac2a">
+        <source>Motorcycles</source>
+        <target>Мотоциклы</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d0bd6847db3a26a61e5581da6f9b3149">
+        <source>Article number</source>
+        <target>Article number</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f9f029cb124a7d5f9b584f1a2f3e38d8">
+        <source>OE number</source>
+        <target>OE number</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="05f785fe6511e95031f13bdcb31bcd5d">
+        <source>Trade number</source>
+        <target>Trade number</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="50c6295062191ba06016c94d409a9837">
+        <source>Comparable number</source>
+        <target>Comparable number</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="25b85183d4f1cd28255159011acccb21">
+        <source>Replacement number</source>
+        <target>Replacement number</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="65048cd372af3bd92da97aada69038ea">
+        <source>Replaced number</source>
+        <target>Replaced number</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1960634960f58850c6aa789a685d199e">
+        <source>EAN number</source>
+        <target>EAN number</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dc247a2256b02a8ee572b0250011022b">
+        <source>Any number</source>
+        <target>Any number</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="06ce2a25e5d12c166a36f654dbea6012">
+        <source>Vertical</source>
+        <target>Vertical</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c1b5fa03ecdb95d4a45dd1c40b02527f">
+        <source>Horizontal</source>
+        <target>Horizontal</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1649aed298f99d587e2eb30c1db5946b">
+        <source>Exact</source>
+        <target>Exact</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="716de874a0d74f25c0aa8c444c3a7539">
+        <source>Prefix</source>
+        <target>Prefix</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="56e6ddd1cb6cec596b433440dfb21c17">
+        <source>Suffix</source>
+        <target>Suffix</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="33d0fcd10faeed61b91a2b4c07455176">
+        <source>Prefix or suffix</source>
+        <target>Prefix or suffix</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="54d68cbe22afdbe66dcbedc7048e5ad4">
+        <source>Spare parts</source>
+        <target>Запчасти</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6311ae17c1ee52b36e68aaf4ad066387">
+        <source>Other</source>
+        <target>Другое</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f6509c05dfe498018f19472295490737">
+        <source>Cheapest</source>
+        <target>Дешевые</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="920c5f62b372ce8ed1056422a02c356a">
+        <source>Expensive</source>
+        <target>Дорогие</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b019ade4672c6e8ba98842a5e4636333">
+        <source>Search form</source>
+        <target>Форма поиска</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="30a559bb94a75709c99c51cd3ed96754">
+        <source>Vehicle search</source>
+        <target>Поиск автомобиля</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2db6e05274a36fb0a305ce287b58b16a">
+        <source>Manufacturers list</source>
+        <target>Список производителей</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="05c4839b0cd3c14808607f8efac33604">
+        <source>Brands list</source>
+        <target>Список брендов</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ab9fc0a7fd8764f9aa00d3a3687545b0">
+        <source>TecDoc inside</source>
+        <target>TecDoc inside</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="512923e3b931df3400cc06287e7541cc">
+        <source>Custom HTML</source>
+        <target>HTML код</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

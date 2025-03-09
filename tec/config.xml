@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>itp_tecdoc</name>
+    <displayName><![CDATA[TecDoc module]]></displayName>
+    <version><![CDATA[4.4.0]]></version>
+    <description><![CDATA[TecDoc module for PrestaShop. This module integrates with the official TecAlliance TecDoc API.]]></description>
+    <author><![CDATA[IT PREMIUM OU]]></author><author_uri><![CDATA[https://automotive-presta.com/]]></author_uri>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

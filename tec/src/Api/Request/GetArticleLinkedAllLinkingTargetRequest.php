@@ -1,0 +1,140 @@
+<?php
+
+/**
+ * 2014-2025 IT PREMIUM OU
+ *
+ * NOTICE OF LICENSE
+ *
+ * This module is licensed for use on one single domain. To use this module on additional domains,
+ * you must purchase additional licenses. Redistribution, resale, leasing, licensing, or offering
+ * this resource to third parties is prohibited.
+ *
+ * The data used in this module, especially the complete database, may not be copied.
+ * It is strictly prohibited to duplicate the data and database and distribute the same,
+ * and/or instruct third parties to engage in such activities, without prior consent from TecAlliance.
+ * Any use of content in a manner not expressly authorized constitutes copyright infringement and violators will be prosecuted.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to https://www.prestashop.com for more information.
+ *
+ * @author IT PREMIUM OU <info@itpremium.net>
+ * @copyright  2014-2025 IT PREMIUM OU.
+ * @license Single Domain License
+ *
+ * PrestaShop and TecDoc are International Registered Trademarks, respective properties of PrestaShop SA and TecAlliance GmbH.
+ * IT PREMIUM OU is not associated with TecAlliance GmbH or PrestaShop SA and their services, all rights belong to their respective owners.
+ */
+
+declare(strict_types=1);
+
+namespace ItPremium\TecDoc\Api\Request;
+
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
+
+class GetArticleLinkedAllLinkingTargetRequest extends AbstractTecDocRequest
+{
+    /**
+     * @var string
+     */
+    protected string $articleCountry;
+
+    /**
+     * @var int
+     */
+    protected int $articleId;
+
+    /**
+     * @var int
+     */
+    protected int $linkingTargetManuId;
+
+    /**
+     * @var string
+     */
+    protected string $linkingTargetType = 'P';
+
+    /**
+     * @return string
+     */
+    public function getArticleCountry(): string
+    {
+        return $this->articleCountry;
+    }
+
+    /**
+     * @param string $articleCountry
+     *
+     * @return $this
+     */
+    public function setArticleCountry(string $articleCountry): static
+    {
+        $this->articleCountry = $articleCountry;
+
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getArticleId(): int
+    {
+        return $this->articleId;
+    }
+
+    /**
+     * @param int $articleId
+     *
+     * @return $this
+     */
+    public function setArticleId(int $articleId): static
+    {
+        $this->articleId = $articleId;
+
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLinkingTargetManuId(): int
+    {
+        return $this->linkingTargetManuId;
+    }
+
+    /**
+     * @param int $linkingTargetManuId
+     *
+     * @return $this
+     */
+    public function setLinkingTargetManuId(int $linkingTargetManuId): static
+    {
+        $this->linkingTargetManuId = $linkingTargetManuId;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkingTargetType(): string
+    {
+        return $this->linkingTargetType;
+    }
+
+    /**
+     * @param string $linkingTargetType
+     *
+     * @return $this
+     */
+    public function setLinkingTargetType(string $linkingTargetType): static
+    {
+        $this->linkingTargetType = $linkingTargetType;
+
+        return $this;
+    }
+}

@@ -1,0 +1,42 @@
+imports:
+  - { resource: ./partials/api.yml }
+  - { resource: ./partials/repositories.yml }
+  - { resource: ./partials/services.yml }
+
+services:
+  _defaults:
+    public: true
+
+  it_premium.tecdoc:
+    class: ItPremium\TecDoc\TecDoc
+    arguments:
+      - '@doctrine.orm.entity_manager'
+      - '@it_premium.tecdoc.service.article'
+      - '@it_premium.tecdoc.service.assembly_group'
+      - '@it_premium.tecdoc.service.brand'
+      - '@it_premium.tecdoc.service.country'
+      - '@it_premium.tecdoc.service.document'
+      - '@it_premium.tecdoc.service.facet'
+      - '@it_premium.tecdoc.service.form'
+      - '@it_premium.tecdoc.service.generic_article'
+      - '@it_premium.tecdoc.service.language'
+      - '@it_premium.tecdoc.service.manufacturer'
+      - '@it_premium.tecdoc.service.model_series'
+      - '@it_premium.tecdoc.service.product'
+      - '@it_premium.tecdoc.service.sitemap'
+      - '@it_premium.tecdoc.service.statistic'
+      - '@it_premium.tecdoc.service.vehicle'
+      - '@it_premium.tecdoc.service.widget'
+
+  it_premium.tecdoc.utils.helper:
+    class: ItPremium\TecDoc\Utils\Helper
+    arguments:
+      - '@it_premium.tecdoc.repository.language'
+
+  it_premium.tecdoc.utils.tecdoc_mapper:
+    class: ItPremium\TecDoc\Utils\TecDocMapper
+    arguments:
+      - '@it_premium.tecdoc.mapper_builder'
+
+  it_premium.tecdoc.mapper_builder:
+    class: CuyZ\Valinor\MapperBuilder

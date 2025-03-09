@@ -1,0 +1,9 @@
+services:
+  _defaults:
+    public: true
+
+  it_premium.tecdoc.kpi.revenue:
+    class: ItPremium\TecDoc\Kpi\TecDocRevenueKpi
+    arguments:
+      - '@translator'
+      - '@it_premium.tecdoc.service.statistic'

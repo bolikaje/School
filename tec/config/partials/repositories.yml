@@ -1,0 +1,117 @@
+services:
+  _defaults:
+    public: true
+
+  it_premium.tecdoc.repository.brand_status:
+    class: ItPremium\TecDoc\Repository\BrandStatusRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocBrandStatus
+
+  it_premium.tecdoc.repository.country:
+    class: ItPremium\TecDoc\Repository\CountryRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocCountry
+
+  it_premium.tecdoc.repository.cross:
+    class: ItPremium\TecDoc\Repository\CrossRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocCross
+
+  it_premium.tecdoc.repository.discount:
+    class: ItPremium\TecDoc\Repository\DiscountRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocDiscount
+
+  it_premium.tecdoc.repository.language:
+    class: ItPremium\TecDoc\Repository\LanguageRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocLanguage
+
+  it_premium.tecdoc.repository.manufacturer_status:
+    class: ItPremium\TecDoc\Repository\ManufacturerStatusRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocManufacturerStatus
+
+  it_premium.tecdoc.repository.margin:
+    class: ItPremium\TecDoc\Repository\MarginRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocMargin
+
+  it_premium.tecdoc.repository.stock:
+    class: ItPremium\TecDoc\Repository\StockRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocStock
+
+  it_premium.tecdoc.repository.supplier:
+    class: ItPremium\TecDoc\Repository\SupplierRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocSupplier
+
+  it_premium.tecdoc.repository.widget:
+    class: ItPremium\TecDoc\Repository\WidgetRepository
+    factory: [ '@doctrine.orm.default_entity_manager', getRepository ]
+    arguments:
+      - ItPremium\TecDoc\Entity\Doctrine\TecdocWidget
+
+  it_premium.tecdoc.repository.api.article:
+    class: ItPremium\TecDoc\Repository\Api\ArticleRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'
+
+  it_premium.tecdoc.repository.api.assembly_group:
+    class: ItPremium\TecDoc\Repository\Api\AssemblyGroupRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'
+
+  it_premium.tecdoc.repository.api.brand:
+    class: ItPremium\TecDoc\Repository\Api\BrandRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'
+
+  it_premium.tecdoc.repository.api.country:
+    class: ItPremium\TecDoc\Repository\Api\CountryRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'
+
+  it_premium.tecdoc.repository.api.generic_article:
+    class: ItPremium\TecDoc\Repository\Api\GenericArticleRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'
+
+  it_premium.tecdoc.repository.api.language:
+    class: ItPremium\TecDoc\Repository\Api\LanguageRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'
+
+  it_premium.tecdoc.repository.api.manufacturer:
+    class: ItPremium\TecDoc\Repository\Api\ManufacturerRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'
+
+  it_premium.tecdoc.repository.api.model_series:
+    class: ItPremium\TecDoc\Repository\Api\ModelSeriesRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'
+
+  it_premium.tecdoc.repository.api.vehicle:
+    class: ItPremium\TecDoc\Repository\Api\VehicleRepository
+    arguments:
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.utils.tecdoc_mapper'

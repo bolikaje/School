@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    public: true
+
+  it_premium.tecdoc.api:
+    class: ItPremium\TecDoc\Api\TecDocApi
+    arguments:
+      - '@it_premium.tecdoc.api.network.gateway'
+      - "@=service('prestashop.adapter.legacy.configuration').get('ITP_TECDOC_CACHE_API_RESPONSES', false)"
+
+  it_premium.tecdoc.api.network.gateway:
+    class: ItPremium\TecDoc\Api\Network\Gateway
+    arguments:
+      - "@=service('prestashop.adapter.legacy.configuration').get('ITP_TECDOC_PROVIDER_ID')"
+      - "@=service('prestashop.adapter.legacy.configuration').get('ITP_TECDOC_API_KEY')"
+      - "@=service('prestashop.adapter.legacy.configuration').get('ITP_TECDOC_COUNTRY_CODE')"
+      - "@=service('it_premium.tecdoc.utils.helper').getCurrentTecDocLanguage()"

@@ -1,0 +1,114 @@
+services:
+  _defaults:
+    public: true
+
+  it_premium.tecdoc.service.article:
+    class: ItPremium\TecDoc\Service\ArticleService
+    arguments:
+      - '@it_premium.tecdoc.repository.api.article'
+      - '@it_premium.tecdoc.service.brand'
+      - '@it_premium.tecdoc.repository.brand_status'
+      - '@it_premium.tecdoc.service.stock'
+      - '@it_premium.tecdoc.repository.api.vehicle'
+
+  it_premium.tecdoc.service.assembly_group:
+    class: ItPremium\TecDoc\Service\AssemblyGroupService
+    arguments:
+      - '@it_premium.tecdoc.repository.api.assembly_group'
+
+  it_premium.tecdoc.service.brand:
+    class: ItPremium\TecDoc\Service\BrandService
+    arguments:
+      - '@it_premium.tecdoc.repository.api.brand'
+      - '@it_premium.tecdoc.repository.brand_status'
+
+  it_premium.tecdoc.service.country:
+    class: ItPremium\TecDoc\Service\CountryService
+    arguments:
+      - '@it_premium.tecdoc.repository.country'
+      - '@it_premium.tecdoc.repository.api.country'
+
+  it_premium.tecdoc.service.document:
+    class: ItPremium\TecDoc\Service\DocumentService
+    arguments:
+      - '@it_premium.tecdoc.api'
+
+  it_premium.tecdoc.service.facet:
+    class: ItPremium\TecDoc\Service\FacetService
+    arguments:
+      - '@=service("prestashop.adapter.legacy.context").getContext().getTranslator()'
+
+  it_premium.tecdoc.service.form:
+    class: ItPremium\TecDoc\Service\FormService
+
+  it_premium.tecdoc.service.generic_article:
+    class: ItPremium\TecDoc\Service\GenericArticleService
+    arguments:
+      - '@it_premium.tecdoc.repository.api.generic_article'
+
+  it_premium.tecdoc.service.language:
+    class: ItPremium\TecDoc\Service\LanguageService
+    arguments:
+      - '@it_premium.tecdoc.repository.language'
+      - '@it_premium.tecdoc.repository.api.language'
+
+  it_premium.tecdoc.service.manufacturer:
+    class: ItPremium\TecDoc\Service\ManufacturerService
+    arguments:
+      - '@it_premium.tecdoc.repository.api.manufacturer'
+      - '@it_premium.tecdoc.repository.manufacturer_status'
+
+  it_premium.tecdoc.service.model_series:
+    class: ItPremium\TecDoc\Service\ModelSeriesService
+    arguments:
+      - '@it_premium.tecdoc.repository.api.model_series'
+      - '@it_premium.tecdoc.service.manufacturer'
+
+  it_premium.tecdoc.service.product:
+    class: ItPremium\TecDoc\Service\ProductService
+    arguments:
+      - '@it_premium.tecdoc.service.article'
+      - '@it_premium.tecdoc.service.stock'
+      - '@doctrine.dbal.default_connection'
+      - '%database_prefix%'
+
+  it_premium.tecdoc.service.sitemap:
+    class: ItPremium\TecDoc\Service\SitemapService
+    arguments:
+      - '@doctrine.orm.entity_manager'
+      - '@it_premium.tecdoc.api'
+      - '@it_premium.tecdoc.repository.stock'
+      - '@it_premium.tecdoc.service.article'
+      - '@it_premium.tecdoc.service.assembly_group'
+      - '@it_premium.tecdoc.service.manufacturer'
+      - '@it_premium.tecdoc.service.model_series'
+      - '@it_premium.tecdoc.service.vehicle'
+      - '@it_premium.tecdoc.utils.helper'
+
+  it_premium.tecdoc.service.statistic:
+    class: ItPremium\TecDoc\Service\StatisticService
+    arguments:
+      - '@doctrine.dbal.default_connection'
+      - '%database_prefix%'
+
+  it_premium.tecdoc.service.stock:
+    class: ItPremium\TecDoc\Service\StockService
+    arguments:
+      - '@it_premium.tecdoc.repository.stock'
+      - '@it_premium.tecdoc.repository.margin'
+      - '@it_premium.tecdoc.repository.discount'
+
+  it_premium.tecdoc.service.vehicle:
+    class: ItPremium\TecDoc\Service\VehicleService
+    arguments:
+      - '@it_premium.tecdoc.repository.api.vehicle'
+
+  it_premium.tecdoc.service.widget:
+    class: ItPremium\TecDoc\Service\WidgetService
+    arguments:
+      - '@it_premium.tecdoc.service.assembly_group'
+      - '@it_premium.tecdoc.service.brand'
+      - '@it_premium.tecdoc.service.manufacturer'
+      - '@it_premium.tecdoc.repository.widget'
+      - '@doctrine.dbal.default_connection'
+      - '%database_prefix%'

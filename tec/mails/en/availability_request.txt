@@ -1,0 +1,19 @@
+ 
+
+{shop_url}
+
+Hi,
+
+A new availability request was made on {shop_name}.
+
+Product: {product}
+
+Quantity: {quantity}
+
+E-mail: {email}
+
+Comment: {comment}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop-project.org/)

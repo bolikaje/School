@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin980xbnlkolru1brbirk" source-language="ru-RU" target-language="lv-LV" datatype="plaintext">
+    <body>
+      <trans-unit id="f8dbbc0dc42a890904daf332ffc83dea">
+        <source>(%s sm³)</source>
+        <target>(%s cm³)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ae47c524a6c80de4a797cd9ecb9db165">
+        <source>%s l</source>
+        <target>%s l</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bdf2cdc858193b150d5085f343181d44">
+        <source>%s cylinders</source>
+        <target>%s cilindri</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d4b6e9213a8927d3f2c58be7606bde6e">
+        <source>%s kw / %s hp</source>
+        <target>%s kw / %s hp</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0c538f5c151008aacda6ad16429cb17a">
+        <source>Choose group - %s %s %s</source>
+        <target>Izvēlieties grupu - %s %s %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6fc96bcbc789abb87110ff226352c71c">
+        <source>The API cache has been seamlessly cleared.</source>
+        <target>API kešatmiņa ir notīrīta.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9d87c7f891a796abed1c0e667dbcfa05">
+        <source>Cached products has been successfully deleted.</source>
+        <target>Kešatmiņā saglabātie produkti ir veiksmīgi dzēsti.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fdeec8a42f9bca6eb42c417d9da14d80">
+        <source>Invalid action.</source>
+        <target>Nederīga darbība.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e8989343c038a5dd1acec19dfa86d96e">
+        <source>Product is required</source>
+        <target>Produkts ir obligāts</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f2a7f16fba0d6dc75a5785faf2cfe033">
+        <source>Quantity is required</source>
+        <target>Daudzums ir obligāts</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0caffe1d763c8cca6a61814abe33b776">
+        <source>Email is required</source>
+        <target>E-pasts ir obligāts</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c4a0bbca729809f8d41ea0ff37c3b401">
+        <source>Your request has been successfully sent!</source>
+        <target>Jūsu pieprasījums ir veiksmīgi nosūtīts!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f7648ad1aac70f37ad187cf666ae2775">
+        <source>An error occurred while sending the availability request!</source>
+        <target>Nosūtot pieprasījumu par pieejamību, radās kļūda!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2377be3c2ad9b435ba277a73f0f1ca76">
+        <source>Manufacturers</source>
+        <target>Ražotāji</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1be6f9eb563f3bf85c78b4219bf09de9">
+        <source>Brand</source>
+        <target>Zīmols</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="065ab3a28ca4f16f55f103adc7d0226f">
+        <source>Delivery</source>
+        <target>Piegāde</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a37ede293936e29279ed543129451ec3">
+        <source>Groups</source>
+        <target>Grupas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="571094bb27864b600d8e6b561a137a55">
+        <source>Quality</source>
+        <target>Kvalitāte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="38a80aeb073583cbdff9bc362aff8f7a">
+        <source>Up to 1 working day</source>
+        <target>Līdz 1 darba dienai</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dc71f0b33f5a60285ce64f7d75a19fcd">
+        <source>Up to %s working days</source>
+        <target>Līdz %s darba dienām</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7a5b04818415fb7b9e9d18cd4d9479e0">
+        <source>Availability request</source>
+        <target>Pieejamības pieprasījums</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bb08d623e194e4ac4889f1ac74cf2155">
+        <source>Find the spare parts you need quickly and easily</source>
+        <target>Ātri un viegli atrodiet nepieciešamās rezerves daļas.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="39b031f1a8505a7556fadf4cd39ca3fd">
+        <source>No articles found</source>
+        <target>Rezerves daļas nav atrastas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="07b7365111b900d8e7dfd51c532ba2c3">
+        <source>Choose group</source>
+        <target>Izvēlieties grupu</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8d94b9ba9567e4b8ce43a45a844ab910">
+        <source>Choose suitable group for %s %s %s</source>
+        <target>Izvēlieties piemērotu grupu priekš %s %s %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6311ae17c1ee52b36e68aaf4ad066387">
+        <source>Other</source>
+        <target>Cits</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4e258e5513e9db4f84e510c1c910d995">
+        <source>No groups found</source>
+        <target>Grupas nav atrastas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="23b061e63f30d87e2c19d2397ad47404">
+        <source>Price and delivery options</source>
+        <target>Cenas un piegādes iespējas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="694e8d1f2ee056f98ee488bdc4982d73">
+        <source>Quantity</source>
+        <target>Daudzums</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2d0f6b8300be19cf35e89e66f0677f95">
+        <source>Add to cart</source>
+        <target>Pievienot grozam</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9174111ac03e8ada363b50fdc4b6e97b">
+        <source>Minimum order quantity: %s pcs</source>
+        <target>Minimālais pasūtījuma daudzums: %s gab</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0c74e4ace331a6da82049d8f632340df">
+        <source>Choose suitable option</source>
+        <target>Izvēlieties piemērotu opciju</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="42031e867e02661aa056f68b482bc2ea">
+        <source>+ deposit %s</source>
+        <target>+ depozīts %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0bf60c54a6275d845f7fbbea6556b6d5">
+        <source>1 pc</source>
+        <target>1 gab</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="eb664c9ad136c2105e49fd8da9bd521c">
+        <source>%s pcs</source>
+        <target>%s gab</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6c0aa3905d448ffe655eee10fb6ce76e">
+        <source>Up to 1 day</source>
+        <target>Līdz 1 dienai</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5dee3cab43256ec70feaea46335ad92e">
+        <source>Up to %s days</source>
+        <target>Līdz %s darba dienām</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="827d7e939c2acd37774d6a0cd7ec0d9c">
+        <source>Fill out the form, and we'll get in touch with you as soon as possible.</source>
+        <target>Aizpildiet veidlapu, un mēs ar jums sazināsimies pēc iespējas ātrāk.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="deb10517653c255364175796ace3553f">
+        <source>Product</source>
+        <target>Produkts</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="65dfcd4a03914bbbb0fe9304eaf78edf">
+        <source>Enter product</source>
+        <target>Ievadiet produktu</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6ab15465aed3fc68522b013c5a570932">
+        <source>Enter quantity</source>
+        <target>Ievadiet daudzumu</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1e884e3078d9978e216a027ecd57fb34">
+        <source>E-mail</source>
+        <target>E-pasts</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2dd80449be38cee114c7ce7479a88485">
+        <source>Enter e-mail</source>
+        <target>Ievadiet e-pastu</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0be8406951cdfda82f00f79328cf4efc">
+        <source>Comment</source>
+        <target>Komentārs</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ceb071dbca35e40f2744df071e9f5669">
+        <source>Enter comment</source>
+        <target>Ievadiet komentāru</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="94966d90747b97d1f0f206c98a8b1ac3">
+        <source>Send</source>
+        <target>Sūtīt</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e7dad05c9e5b136ef87d663542700442">
+        <source>Delivery up to 1 working day</source>
+        <target>Piegāde līdz 1 darba dienai</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="519318d4dddd24dd47f44c332013c569">
+        <source>Delivery up to %s working days</source>
+        <target>Piegāde līdz %s darba dienām</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fcebe56087b9373f15514831184fa572">
+        <source>In stock</source>
+        <target>Ir noliktavā</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="104d9898c04874d0fbac36e125fa1369">
+        <source>Discount</source>
+        <target>Atlaide</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b55197a49e8c4cd8c314bc2aa39d6feb">
+        <source>Out of stock</source>
+        <target>Nav noliktavā</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="16bfbf9c462762cf1cba4134ec53c504">
+        <source>Loading</source>
+        <target>Ielāde</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e4a00407f4e14849a66f076123f38494">
+        <source>Years</source>
+        <target>Gadi</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7bfa30721c5e726ff17e3f972237a82c">
+        <source>Engine</source>
+        <target>Dzinējs</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dd4fe0cc913f704600b97d1f5dd285de">
+        <source>Power</source>
+        <target>Jauda</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="94fc563c7130bb29e3860f2ad076b575">
+        <source>Fuel</source>
+        <target>Degviela</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ac101b32dda4448cf13a93fe283dddd8">
+        <source>Body</source>
+        <target>Virsbūve</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca">
+        <source>Reference</source>
+        <target>Kods</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="287234a1ff35a314b5b6bc4e5828e745">
+        <source>Attributes</source>
+        <target>Raksturojums</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e6f9e789dbd8907e4b5c0e400df78f98">
+        <source>OEM numbers</source>
+        <target>OEM numuri</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="df9c715f20aaf58fb3926cc02b08ec53">
+        <source>Compatibility</source>
+        <target>Savietojamība</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8473c64720dc7b434265c2534de818b8">
+        <source>Similar articles</source>
+        <target>Līdzīgas rezerves daļas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="529a05ca6c1263aab080ec4f20754411">
+        <source>Make</source>
+        <target>Marka</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a559b87068921eec05086ce5485e9784">
+        <source>Model</source>
+        <target>Modelis</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d6af9c1eaff2a89ebd3f8d0c542be12b">
+        <source>Vehicle</source>
+        <target>Modifikācija</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="23afceb99cee9bc737ceeb539d9aa6b0">
+        <source>%s - %s</source>
+        <target>%s - %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f2c6151d6c0d99f3666129b97e2100f5">
+        <source>Drive</source>
+        <target>Piedziņa</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2ac25f8f90ece36fa66024d7bbc235c9">
+        <source>Choose manufacturer</source>
+        <target>Marka</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bae12fd385463d05721ee2e7b2634046">
+        <source>Begin exploring our catalog by selecting a suitable manufacturer</source>
+        <target>Sāciet mūsu kataloga apskatu, izvēloties piemērotu ražotāju</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a4ee63223e48488d61a7e69d57dc38ac">
+        <source>No manufacturers found</source>
+        <target>Ražotāji nav atrasti</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b9962e0dc84b2cb4930d69a3b25a3b19">
+        <source>Choose model</source>
+        <target>Modelis</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="33dc97dab9be1565e482837fdb46ec05">
+        <source>Choose suitable model for %s</source>
+        <target>Izvēlieties modeli priekš %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="863130b3595f19262f8bc21d7a97e737">
+        <source>Select model</source>
+        <target>Modelis</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d83aa4caa015f3de317fccdad8e332a8">
+        <source>No models found</source>
+        <target>Modeļi nav atrasti</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fbc73b1a51d64f21cfd0d9bf81e56102">
+        <source>Choose vehicle</source>
+        <target>Modifikācija</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f5084d5352f15f74d6ffbf01ecefb033">
+        <source>Choose suitable vehicle for %s %s</source>
+        <target>Izvēlieties modifikāciju priekš %s %s</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="961f2247a2070bedff9f9cd8d64e2650">
+        <source>Choose</source>
+        <target>Izvēlēties</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="df1eff241d28dfb86b6780dfd9e18df6">
+        <source>No vehicles found</source>
+        <target>Transportlīdzekļi nav atrasti</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6e31429bb15b26679680f1da68defb3c">
+        <source>Select manufacturer</source>
+        <target>Marka</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2a37324bb4c331c859044121df3f576b">
+        <source>Search...</source>
+        <target>Meklēt...</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b22660dd5370a6000cd10cc1c58292a4">
+        <source>Select vehicle</source>
+        <target>Modifikācija</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="13348442cc6a27032d2b4aa28b75a5d3">
+        <source>Search</source>
+        <target>Meklēt</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="826c19d01b527f2701cc3460b9c889de">
+        <source>Manually</source>
+        <target>Manuāli</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ab9fc0a7fd8764f9aa00d3a3687545b0">
+        <source>TecDoc inside</source>
+        <target>TecDoc inside</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="93b992281672ddbb4e15e45817085d34">
+        <source>The data shown here, especially the complete database, may not be copied. It is strictly prohibited to duplicate the data and database and distribute the same, and/or instruct third parties to engage in such activities, without prior consent from TecAlliance. Any use of content in a manner not expressly authorized constitutes copyright infringement and violators will be prosecuted.</source>
+        <target>Aizliegts kopēt šeit redzamos datus, it īpaši pilno datu bāzi. Stingri aizliegts dublēt datus un datubāzi, kā arī tos izplatīt un/vai uzdot trešajām personām iesaistīties šādās darbībās bez iepriekšējas TecAlliance piekrišanas. Jebkāda satura izmantošana veidā, kas nav atļauts ar īpašu pilnvarojumu, ir autortiesību pārkāpums, un to pārkāpēji tiks sodīti.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fabd37db314f39e74f9116cc1393d935">
+        <source>Choose your vehicle</source>
+        <target>Izvēlieties savu transportlīdzekli</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="af1b98adf7f686b84cd0b443e022b7a0">
+        <source>Categories</source>
+        <target>Kategorijas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f3f43e30c8c7d78c6ac0173515e57a00">
+        <source>Filters</source>
+        <target>Filtri</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9e076f5885f5cc16a4b5aeb8de4adff5">
+        <source>Not found</source>
+        <target>Nav atrasts</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="268d1dca05a4dd6c3d647a4de01bf9d5">
+        <source>Reset filters</source>
+        <target>Atiestatīt filtrus</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

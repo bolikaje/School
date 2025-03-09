@@ -1,0 +1,2970 @@
+/**
+ * 2014-2025 IT PREMIUM OU
+ *
+ * NOTICE OF LICENSE
+ *
+ * This module is licensed for use on one single domain. To use this module on additional domains,
+ * you must purchase additional licenses. Redistribution, resale, leasing, licensing, or offering
+ * this resource to third parties is prohibited.
+ *
+ * The data used in this module, especially the complete database, may not be copied.
+ * It is strictly prohibited to duplicate the data and database and distribute the same,
+ * and/or instruct third parties to engage in such activities, without prior consent from TecAlliance.
+ * Any use of content in a manner not expressly authorized constitutes copyright infringement and violators will be prosecuted.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to https://www.prestashop.com for more information.
+ *
+ * @author IT PREMIUM OU <info@itpremium.net>
+ * @copyright  2014-2025 IT PREMIUM OU.
+ * @license Single Domain License
+ *
+ * PrestaShop and TecDoc are International Registered Trademarks, respective properties of PrestaShop SA and TecAlliance GmbH.
+ * IT PREMIUM OU is not associated with TecAlliance GmbH or PrestaShop SA and their services, all rights belong to their respective owners.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --tecdoc-background-color: #f3f8fd;
+    --tecdoc-border-color: #e9ecef;
+    --tecdoc-input-background-color: #e6efff;
+    --tecdoc-input-disabled-background-color: #e0e0e0;
+    --tecdoc-label-color: #97a9b9;
+    --tecdoc-primary-color: #11011c;
+    --tecdoc-primary-filter: brightness(0) saturate(100%) invert(21%) sepia(78%) saturate(2139%) hue-rotate(209deg) brightness(106%) contrast(95%);
+    --tecdoc-text-dark-color: #2B2B2B;
+    --tecdoc-text-light-color: #688297
+}
+
+[x-cloak] {
+    display: none !important
+}
+
+.tecdoc-button {
+    align-items: center;
+    background-color: var(--tecdoc-primary-color);
+    border-radius: 36px;
+    border: unset;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 12px;
+    height: 44px;
+    justify-content: center;
+    outline: unset;
+    padding: 10px 18px;
+    transition: .15s
+}
+
+.tecdoc-button:hover {
+    opacity: .9
+}
+
+.tecdoc-button:disabled {
+    cursor: auto;
+    opacity: .7
+}
+
+.tecdoc-button--add-to-cart:before {
+    background-image: url(../../img/icons/cart.svg);
+    background-size: cover;
+    content: "";
+    filter: brightness(0) invert(1);
+    flex-shrink: 0;
+    height: 25px;
+    width: 24px
+}
+
+.tecdoc-button--search:before {
+    background-image: url(../../img/icons/search.svg);
+    background-size: cover;
+    content: "";
+    filter: brightness(0) invert(1);
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px
+}
+
+.tecdoc-button--reset {
+    background-color: #e0e0e0;
+    color: #333333;
+    width: 100%
+}
+
+.tecdoc-button--loading .tecdoc-button__content {
+    display: none
+}
+
+.tecdoc-button--loading:before {
+    display: none
+}
+
+.tecdoc-button--loading:after {
+    animation: loading-spinner 1s ease infinite;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-top-color: #fff;
+    content: '';
+    height: 26px;
+    width: 26px
+}
+
+@keyframes loading-spinner {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.tecdoc-dropdown {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-dropdown--expanded .tecdoc-dropdown__preview:after {
+    transform: rotate(180deg)
+}
+
+.tecdoc-dropdown__preview {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    gap: 16px
+}
+
+.tecdoc-dropdown__preview:after {
+    background-image: url(../../img/icons/chevron-down-light.svg);
+    background-size: cover;
+    content: "";
+    height: 12px;
+    transition-duration: .15s;
+    transition-property: transform;
+    width: 12px
+}
+
+.tecdoc-dropdown__body {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0000001a;
+    max-height: 200px;
+    min-width: 200px;
+    overflow: auto;
+    overscroll-behavior: contain;
+    z-index: 1000
+}
+
+.tecdoc-dropdown__option {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 14px;
+    transition: .15s
+}
+
+.tecdoc-dropdown__option:hover {
+    background-color: var(--tecdoc-primary-color);
+    color: #fff
+}
+
+.tecdoc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: unset
+}
+
+.tecdoc-form__text--success {
+    color: #0db428
+}
+
+.tecdoc-form__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative
+}
+
+.tecdoc-form__field--required .tecdoc-form__label:after {
+    color: #d80027;
+    content: "*";
+    margin-left: 2px
+}
+
+.tecdoc-form__label {
+    color: var(--tecdoc-text-dark-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: unset;
+    text-align: left
+}
+
+.tecdoc-form__textarea {
+    min-height: 100px
+}
+
+.tecdoc-form__input,
+.tecdoc-form__textarea {
+    background-color: var(--tecdoc-background-color);
+    border-radius: 6px;
+    border: 1px solid transparent;
+    color: var(--tecdoc-text-dark-color);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 100%;
+    outline: unset;
+    overflow: hidden;
+    padding: 12px;
+    transition: .15s
+}
+
+.tecdoc-form__input:active,
+.tecdoc-form__input:focus,
+.tecdoc-form__textarea:active,
+.tecdoc-form__textarea:focus {
+    color: var(--tecdoc-text-dark-color);
+    background-color: var(--tecdoc-input-background-color)
+}
+
+.tecdoc-form__input:disabled,
+.tecdoc-form__textarea:disabled {
+    background-color: var(--tecdoc-input-disabled-background-color)
+}
+
+.tecdoc-form__input--error,
+.tecdoc-form__textarea--error {
+    border: 1px solid #D80027
+}
+
+.tecdoc-form__error-message {
+    color: #d80027;
+    font-size: 14px
+}
+
+.tecdoc-loader {
+    align-items: center;
+    display: flex;
+    gap: 16px
+}
+
+.tecdoc-loader:before {
+    animation: loading-spinner 1s ease infinite;
+    border-radius: 50%;
+    border: 2px solid var(--tecdoc-primary-color);
+    border-top-color: #fff;
+    content: '';
+    height: 18px;
+    width: 18px
+}
+
+.tecdoc-selector {
+    background-color: var(--tecdoc-background-color);
+    border-radius: 6px;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-selector--active {
+    z-index: 999
+}
+
+.tecdoc-selector--active .tecdoc-selector__field:after {
+    filter: var(--tecdoc-primary-filter);
+    transform: rotate(180deg)
+}
+
+.tecdoc-selector--selected .tecdoc-selector__label {
+    color: #333;
+    font-weight: 500
+}
+
+.tecdoc-selector__field {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 18px;
+    height: 48px;
+    padding: 12px 18px
+}
+
+.tecdoc-selector__field:after {
+    background-image: url(../../img/icons/chevron-down-light.svg);
+    background-size: cover;
+    content: "";
+    flex-shrink: 0;
+    height: 12px;
+    margin-left: auto;
+    transition: .15s;
+    width: 12px
+}
+
+.tecdoc-selector__row {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    gap: 18px;
+    overflow: hidden
+}
+
+.tecdoc-selector__row--search:before {
+    background-image: url(../../img/icons/search.svg);
+    background-size: cover;
+    content: "";
+    display: block;
+    filter: var(--tecdoc-primary-filter);
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px
+}
+
+.tecdoc-selector__step {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: var(--tecdoc-primary-color);
+    display: flex;
+    flex-shrink: 0;
+    font-size: 14px;
+    height: 24px;
+    justify-content: center;
+    width: 24px
+}
+
+.tecdoc-selector__label {
+    color: var(--tecdoc-label-color);
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.tecdoc-selector__search {
+    background-color: unset;
+    border: unset;
+    font-size: 16px;
+    height: 24px;
+    outline: unset;
+    padding: unset;
+    width: 100%
+}
+
+.tecdoc-selector__dropdown {
+    background-color: var(--tecdoc-background-color);
+    border-radius: 6px;
+    max-height: 300px;
+    overflow: auto;
+    width: 100%;
+    z-index: 2
+}
+
+.tecdoc-selector__option {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    gap: 16px;
+    padding: 10px 16px;
+    transition: .15s
+}
+
+.tecdoc-selector__option:hover,
+.tecdoc-selector__option:active {
+    background-color: var(--tecdoc-primary-color);
+    color: #fff
+}
+
+.tecdoc-selector__option:hover .tecdoc-selector__sub-value,
+.tecdoc-selector__option:active .tecdoc-selector__sub-value {
+    color: #fff
+}
+
+.tecdoc-selector__option:not(:last-of-type) {
+    border-bottom: 1px solid #fff
+}
+
+.tecdoc-selector__option--disabled {
+    cursor: auto
+}
+
+.tecdoc-selector__option--disabled:hover,
+.tecdoc-selector__option--disabled:active {
+    background-color: inherit;
+    color: inherit
+}
+
+.tecdoc-selector__column {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.tecdoc-selector__sub-value {
+    color: #97A9B9;
+    font-size: 13px
+}
+
+.tecdoc-selector__chevron {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-shrink: 0;
+    height: 18px;
+    justify-content: center;
+    margin-left: auto;
+    width: 18px
+}
+
+.tecdoc-selector__chevron:after {
+    background-image: url(../../img/icons/chevron-right-light.svg);
+    background-size: cover;
+    content: "";
+    filter: var(--tecdoc-primary-filter);
+    height: 10px;
+    width: 10px
+}
+
+.tecdoc-grid {
+    display: grid;
+    gap: 16px
+}
+
+.tecdoc-grid__item {
+    -webkit-user-select: none;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--tecdoc-border-color);
+    position: relative;
+    text-align: center;
+    transition: border .15s;
+    user-select: none
+}
+
+.tecdoc-grid__item:hover {
+    border-color: var(--tecdoc-primary-color)
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__item--active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: unset;
+    margin-bottom: -17px
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__item--active:hover + .tecdoc-grid__dropdown {
+    border-color: var(--tecdoc-primary-color)
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__item--active + .tecdoc-grid__dropdown {
+    display: block
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__item--active .tecdoc-grid__toggle:after {
+    transform: rotate(180deg)
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__item--first-in-row + .tecdoc-grid__dropdown {
+    border-top-left-radius: 0
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__item--last-in-row + .tecdoc-grid__dropdown {
+    border-top-right-radius: 0
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__toggle {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__toggle:after {
+    background-image: url(../../img/icons/chevron-down-light.svg);
+    background-size: cover;
+    content: "";
+    filter: var(--tecdoc-primary-filter);
+    height: 14px;
+    transition: transform .15s;
+    width: 15px
+}
+
+.tecdoc-grid--dropdownable .tecdoc-grid__dropdown {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid var(--tecdoc-border-color);
+    display: none;
+    padding: 24px;
+    transition: border .15s
+}
+
+@media (min-width: 576px) {
+    .tecdoc-grid--dropdownable .tecdoc-grid__dropdown {
+        grid-column: 1/3
+    }
+}
+
+@media (min-width: 768px) {
+    .tecdoc-grid--dropdownable .tecdoc-grid__dropdown {
+        grid-column: 1/4
+    }
+}
+
+@media (min-width: 992px) {
+    .tecdoc-grid--dropdownable .tecdoc-grid__dropdown {
+        grid-column: 1/5
+    }
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-grid--dropdownable .tecdoc-grid__dropdown {
+        grid-column: 1/6
+    }
+}
+
+@media (min-width: 576px) {
+    .tecdoc-grid {
+        grid-template-columns:repeat(2, 1fr)
+    }
+}
+
+@media (min-width: 768px) {
+    .tecdoc-grid {
+        grid-template-columns:repeat(3, 1fr)
+    }
+}
+
+@media (min-width: 992px) {
+    .tecdoc-grid {
+        grid-template-columns:repeat(4, 1fr)
+    }
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-grid {
+        grid-template-columns:repeat(5, 1fr)
+    }
+}
+
+.tecdoc-heading {
+    margin: unset
+}
+
+.tecdoc-image {
+    max-width: 100%;
+    height: auto
+}
+
+.tecdoc-link {
+    color: #333;
+    text-decoration: unset;
+    transition: .15s
+}
+
+.tecdoc-link:focus,
+.tecdoc-link:hover {
+    color: var(--tecdoc-primary-color);
+    text-decoration: unset
+}
+
+.tecdoc-link--underline:focus,
+.tecdoc-link--underline:hover {
+    text-decoration: underline
+}
+
+.tecdoc-add-to-cart-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: unset
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-add-to-cart-form {
+        align-items: flex-end
+    }
+}
+
+.tecdoc-add-to-cart-form__show-availability-options {
+    align-items: center;
+    color: var(--tecdoc-primary-color);
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px
+}
+
+.tecdoc-add-to-cart-form__show-availability-options:before {
+    background-image: url(../../img/icons/truck.svg);
+    background-size: cover;
+    content: "";
+    filter: var(--tecdoc-primary-filter);
+    flex-shrink: 0;
+    height: 19px;
+    width: 18px
+}
+
+.tecdoc-add-to-cart-form__actions {
+    align-items: center;
+    display: flex;
+    gap: 20px
+}
+
+.tecdoc-add-to-cart-form__minimum-order-quantity {
+    color: #a8a8a8;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.tecdoc-availability-options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.tecdoc-availability-option {
+    border-radius: 12px;
+    color: var(--tecdoc-text-dark-color);
+    padding: 12px 16px
+}
+
+.tecdoc-availability-option:nth-child(odd) {
+    background-color: var(--tecdoc-background-color)
+}
+
+.tecdoc-availability-option--form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    margin: unset;
+    padding: 20px
+}
+
+@media (min-width: 768px) {
+    .tecdoc-availability-option--form {
+        align-items: center;
+        flex-direction: row;
+        padding: 12px 16px
+    }
+}
+
+.tecdoc-availability-option--form .tecdoc-availability-option__actions {
+    align-items: center;
+    display: flex;
+    gap: 20px
+}
+
+.tecdoc-availability-option__label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    gap: 24px;
+    width: 100%
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-availability-option__label {
+        font-size: 14px
+    }
+}
+
+.tecdoc-availability-option__label > span {
+    align-items: center;
+    display: flex;
+    flex: 1
+}
+
+.tecdoc-availability-option__input-wrapper {
+    gap: 22px
+}
+
+.tecdoc-availability-option__radio {
+    margin: unset
+}
+
+.tecdoc-availability-option__prices-wrapper {
+    align-items: start !important;
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.tecdoc-availability-option__prices {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    line-height: 1
+}
+
+.tecdoc-availability-option__price--with-discount {
+    color: #ff5c00
+}
+
+.tecdoc-availability-option__old-price {
+    font-size: 12px;
+    text-decoration: line-through
+}
+
+.tecdoc-availability-option__deposit {
+    color: var(--tecdoc-text-light-color);
+    font-size: 12px
+}
+
+.tecdoc-availability-option__quantity,
+.tecdoc-availability-option__delivery-time {
+    display: flex;
+    gap: 8px
+}
+
+.tecdoc-availability-option__quantity:before,
+.tecdoc-availability-option__delivery-time:before {
+    background-size: cover;
+    content: "";
+    filter: var(--tecdoc-primary-filter);
+    flex-shrink: 0
+}
+
+.tecdoc-availability-option__quantity:before {
+    background-image: url(../../img/icons/stock.svg);
+    height: 18px;
+    width: 18px
+}
+
+.tecdoc-availability-option__delivery-time:before {
+    background-image: url(../../img/icons/truck.svg);
+    height: 20px;
+    width: 20px
+}
+
+.tecdoc-compatibles {
+    border-radius: 16px;
+    border: 1px solid var(--tecdoc-border-color);
+    display: flex;
+    flex-direction: column
+}
+
+.tecdoc-compatible {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px
+}
+
+.tecdoc-compatible:not(:last-child) {
+    border-bottom: 1px solid var(--tecdoc-border-color)
+}
+
+.tecdoc-compatible__toggle {
+    -webkit-user-select: none;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    gap: 16px;
+    user-select: none
+}
+
+.tecdoc-compatible__toggle:before {
+    background-image: url(../../img/icons/plus.svg);
+    background-size: cover;
+    content: "";
+    filter: var(--tecdoc-primary-filter);
+    height: 16px;
+    width: 16px
+}
+
+.tecdoc-compatible__toggle--active:before {
+    background-image: url(../../img/icons/minus.svg)
+}
+
+.tecdoc-compatible__toggle--light:before {
+    background-image: url(../../img/icons/plus-light.svg)
+}
+
+.tecdoc-compatible__toggle--light.tecdoc-compatible__toggle--active:before {
+    background-image: url(../../img/icons/minus-light.svg);
+    height: 17px
+}
+
+.tecdoc-compatible__image {
+    width: 26px;
+    height: 26px
+}
+
+.tecdoc-compatible__value {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.tecdoc-compatible__manufacturer {
+    -webkit-user-select: none;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+    transition: .15s;
+    user-select: none
+}
+
+.tecdoc-compatible__models {
+    border-left: 1px solid var(--tecdoc-border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 24px
+}
+
+.tecdoc-compatible__model {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-data-row {
+    align-items: center;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 10px 0
+}
+
+@media (min-width: 992px) {
+    .tecdoc-data-row {
+        border-radius: 8px;
+        border: unset;
+        padding: 12px 16px
+    }
+
+    .tecdoc-data-row:nth-child(odd) {
+        background-color: var(--tecdoc-background-color)
+    }
+}
+
+.tecdoc-data-row__value {
+    text-align: right
+}
+
+.tecdoc-data-row__link {
+    color: var(--tecdoc-primary-color);
+    font-weight: 500
+}
+
+.tecdoc-assembly-groups-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-assembly-groups-menu__header {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -.33px;
+    line-height: 30px
+}
+
+.tecdoc-assembly-groups-menu__body {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 12px
+}
+
+.tecdoc-facets {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-facets__header {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -.33px;
+    line-height: 30px
+}
+
+.tecdoc-facets__body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+.tecdoc-facet {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-facet:not(:last-child):after {
+    background: var(--tecdoc-border-color);
+    content: "";
+    height: 1px;
+    width: 100%
+}
+
+.tecdoc-facet__header {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -.18px;
+    line-height: 22px;
+    padding-right: 22px;
+    position: relative
+}
+
+.tecdoc-facet__header:after {
+    background-image: url(../../img/icons/chevron-down.svg);
+    content: "";
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .15s ease-in-out;
+    width: 24px
+}
+
+.tecdoc-facet__body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+.tecdoc-facet__search-field {
+    border-radius: 32px;
+    border: 1px solid var(--tecdoc-border-color);
+    overflow: hidden;
+    position: relative;
+    transition: .15s
+}
+
+.tecdoc-facet__search-field:after {
+    background-image: url(../../img/icons/search.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px
+}
+
+.tecdoc-facet__search-field:has(.tecdoc-facet__search:focus, .tecdoc-facet__search:focus-visible) {
+    border-color: var(--tecdoc-primary-color)
+}
+
+.tecdoc-facet__search-field:has(.tecdoc-facet__search:focus, .tecdoc-facet__search:focus-visible):after {
+    filter: var(--tecdoc-primary-filter)
+}
+
+.tecdoc-facet__search {
+    border: unset;
+    color: var(--tecdoc-text-dark-color);
+    font-size: 14px;
+    outline: unset;
+    padding: 10px 40px 10px 16px;
+    width: 100%
+}
+
+.tecdoc-facet__search::placeholder {
+    color: #505969
+}
+
+.tecdoc-facet__search:disabled {
+    background-color: var(--tecdoc-input-disabled-background-color);
+    border-color: var(--tecdoc-input-disabled-background-color)
+}
+
+.tecdoc-facet__search:disabled::placeholder {
+    color: #fff
+}
+
+.tecdoc-facet__not-found {
+    font-size: 14px
+}
+
+.tecdoc-facet__options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 290px;
+    overflow-y: auto;
+    padding-right: 12px
+}
+
+.tecdoc-facet__option {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.tecdoc-facet__input {
+    display: none
+}
+
+.tecdoc-facet__input:checked + .tecdoc-facet__label .tecdoc-facet__checkbox:before {
+    background-image: url(../../img/icons/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    filter: var(--tecdoc-primary-filter);
+    height: 10px;
+    width: 10px
+}
+
+.tecdoc-facet__label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 12px;
+    margin: unset
+}
+
+.tecdoc-facet__content {
+    line-height: 1.5;
+    text-align: left
+}
+
+.tecdoc-facet__checkbox {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid var(--tecdoc-primary-color);
+    display: flex;
+    flex-shrink: 0;
+    height: 16px;
+    justify-content: center;
+    width: 16px
+}
+
+.tecdoc-facet__count {
+    align-items: center;
+    background-color: #f0f1f2;
+    border-radius: 8px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 10px;
+    justify-content: center;
+    line-height: 1;
+    margin-left: 12px;
+    min-width: 26px;
+    padding: 4px 10px
+}
+
+.tecdoc-facet--active .tecdoc-facet__header:after {
+    transform: translateY(-50%) rotate(-180deg)
+}
+
+.tecdoc-facet--active .tecdoc-facet__body {
+    display: flex
+}
+
+.tecdoc-modal {
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000
+}
+
+.tecdoc-modal--small .tecdoc-modal__dialog {
+    max-width: 420px
+}
+
+.tecdoc-modal__dialog {
+    margin: 2% auto;
+    max-width: 700px;
+    position: relative;
+    width: auto;
+    z-index: 999
+}
+
+.tecdoc-modal__content {
+    background-color: #fff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px
+}
+
+@media (min-width: 992px) {
+    .tecdoc-modal__content {
+        gap: 32px;
+        padding: 32px
+    }
+}
+
+.tecdoc-modal__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px
+}
+
+.tecdoc-modal__title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -.33px;
+    line-height: 30px;
+    margin: unset
+}
+
+.tecdoc-modal__close {
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-modal__close:before {
+    background-image: url(../../img/icons/close.svg);
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 24px;
+    width: 24px
+}
+
+.tecdoc-modal__body {
+    color: var(--tecdoc-text-light-color);
+    font-size: 16px
+}
+
+.tecdoc-modal__backdrop {
+    background-color: #F4A424;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 998
+}
+
+.tecdoc-pagination {
+    display: flex;
+    gap: 8px;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-pagination__item {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--tecdoc-border-color);
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    height: 32px;
+    justify-content: center;
+    transition: .15s;
+    width: 32px
+}
+
+.tecdoc-pagination__item--active,
+.tecdoc-pagination__item:hover {
+    background-color: var(--tecdoc-primary-color);
+    border-color: var(--tecdoc-primary-color);
+    color: #fff
+}
+
+.tecdoc-pagination__item--disabled {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0
+}
+
+.tecdoc-pagination__item--disabled:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: initial
+}
+
+.tecdoc-pagination__arrow:before {
+    background-size: cover;
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: block
+}
+
+.tecdoc-pagination__arrow:hover:before {
+    filter: invert(1) grayscale(100)
+}
+
+.tecdoc-pagination__arrow--left:before {
+    background-image: url(../../img/icons/chevron-left-alternative.svg)
+}
+
+.tecdoc-pagination__arrow--right:before {
+    background-image: url(../../img/icons/chevron-right-alternative.svg)
+}
+
+.tecdoc-quantity {
+    background-color: #f0f1f2;
+    border-radius: 26px;
+    display: inline-flex;
+    height: 44px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-quantity__minus,
+.tecdoc-quantity__plus {
+    align-items: center;
+    border: unset;
+    display: flex;
+    outline: unset;
+    padding: 12px
+}
+
+.tecdoc-quantity__minus:after,
+.tecdoc-quantity__plus:after {
+    background-size: cover;
+    content: "";
+    height: 10px;
+    width: 10px
+}
+
+.tecdoc-quantity__minus:hover,
+.tecdoc-quantity__plus:hover {
+    cursor: pointer
+}
+
+.tecdoc-quantity__minus:after {
+    background-image: url(../../img/icons/minus.svg)
+}
+
+.tecdoc-quantity__plus:after {
+    background-image: url(../../img/icons/plus.svg)
+}
+
+.tecdoc-quantity__input {
+    background-color: #f0f1f2;
+    border: unset;
+    font-size: 14px;
+    font-weight: 500;
+    outline: unset;
+    text-align: center;
+    width: 30px
+}
+
+.tecdoc-quantity__input::-webkit-outer-spin-button,
+.tecdoc-quantity__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.tecdoc-quantity__input[type=number] {
+    -moz-appearance: textfield
+}
+
+.tecdoc-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 50px
+}
+
+.tecdoc-tabs__buttons {
+    display: flex;
+    gap: 36px;
+    overflow: auto;
+    position: relative
+}
+
+.tecdoc-tabs__buttons:after {
+    border-bottom: 3px solid #F0F1F2;
+    border-radius: 10px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0
+}
+
+.tecdoc-tabs__button {
+    -webkit-user-select: none;
+    color: #c3c3c3;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    position: relative;
+    text-decoration: none !important;
+    transition: .15s;
+    user-select: none;
+    white-space: nowrap
+}
+
+.tecdoc-tabs__button--active,
+.tecdoc-tabs__button:hover {
+    color: var(--tecdoc-primary-color)
+}
+
+.tecdoc-tabs__button--active:after {
+    border-bottom: 3px solid var(--tecdoc-primary-color);
+    border-radius: 10px;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 9
+}
+
+.tecdoc-tabs__row {
+    display: flex;
+    flex-direction: column
+}
+
+@media (min-width: 992px) {
+    .tecdoc-tabs__row {
+        flex-direction: row;
+        gap: 24px
+    }
+}
+
+.tecdoc-tabs__column {
+    flex: 1
+}
+
+.tecdoc-tooltip {
+    background-color: #fffffe;
+    border-radius: 8px;
+    bottom: -10px;
+    box-shadow: 0 0 7.9px -2px #1b212c26;
+    font-size: 12px;
+    left: 0;
+    opacity: 0;
+    padding: 10px 18px;
+    position: absolute;
+    transform: translateY(100%);
+    transition: .15s;
+    visibility: hidden
+}
+
+.tecdoc-tooltip:before {
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    width: 0
+}
+
+.tecdoc-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-articles__header {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between
+}
+
+.tecdoc-articles__summary {
+    font-size: 14px
+}
+
+.tecdoc-articles__actions {
+    display: none
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-articles__actions {
+        align-items: center;
+        display: flex;
+        gap: 16px
+    }
+}
+
+.tecdoc-articles__view {
+    display: flex;
+    gap: 10px
+}
+
+.tecdoc-articles__view-link {
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #97A9B9;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 24px
+}
+
+.tecdoc-articles__view-link:after {
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px
+}
+
+.tecdoc-articles__view-link--list:after {
+    background-image: url(../../img/icons/list.svg)
+}
+
+.tecdoc-articles__view-link--grid:after {
+    background-image: url(../../img/icons/grid.svg)
+}
+
+.tecdoc-articles__view-link--active {
+    border-color: var(--tecdoc-primary-color)
+}
+
+.tecdoc-articles__view-link--active:after {
+    filter: var(--tecdoc-primary-filter)
+}
+
+.tecdoc-articles__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.tecdoc-articles__grid {
+    display: grid;
+    gap: 24px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-articles__grid {
+        grid-template-columns:repeat(3, 1fr)
+    }
+}
+
+.tecdoc-article {
+    position: relative;
+    width: 100%
+}
+
+.tecdoc-article--miniature {
+    border: 1px solid var(--tecdoc-border-color);
+    border-radius: 18px;
+    padding: 24px;
+    width: auto
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article--miniature .tecdoc-article__images {
+        flex-basis: 20%
+    }
+}
+
+.tecdoc-article--miniature .tecdoc-article__content {
+    gap: 18px
+}
+
+.tecdoc-article--vertical .tecdoc-article__row {
+    flex-direction: column;
+    gap: 26px
+}
+
+.tecdoc-article--vertical .tecdoc-article__attributes {
+    display: none
+}
+
+.tecdoc-article--vertical .tecdoc-article__metas {
+    align-items: start;
+    flex-direction: column;
+    gap: 8px
+}
+
+.tecdoc-article--vertical .tecdoc-article__availability {
+    align-items: start
+}
+
+.tecdoc-article--vertical .tecdoc-article__prices-wrapper,
+.tecdoc-article--vertical .tecdoc-article__form {
+    align-items: start
+}
+
+.tecdoc-article--vertical .tecdoc-article__form .tecdoc-button:before {
+    display: none
+}
+
+.tecdoc-article--full .tecdoc-article__brand-information {
+    left: 16px;
+    top: 16px
+}
+
+.tecdoc-article--full .tecdoc-article__badges {
+    right: 16px;
+    top: 16px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article--full .tecdoc-article__row {
+        gap: 48px
+    }
+
+    .tecdoc-article--full .tecdoc-article__badges {
+        right: unset;
+        top: unset
+    }
+}
+
+.tecdoc-article--full .tecdoc-article__title {
+    font-size: 24px;
+    line-height: 36px
+}
+
+@media (min-width: 992px) {
+    .tecdoc-article--full .tecdoc-article__title {
+        font-size: 30px
+    }
+}
+
+.tecdoc-article--full .tecdoc-article__images {
+    justify-content: unset
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article--full .tecdoc-article__images {
+        width: 30%
+    }
+}
+
+.tecdoc-article--full .tecdoc-article__content {
+    gap: 22px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article--full .tecdoc-article__prices {
+        flex-direction: column-reverse
+    }
+}
+
+.tecdoc-article__brand-information {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    left: 24px;
+    position: absolute;
+    top: 24px
+}
+
+.tecdoc-article__brand-quality {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    position: relative;
+    width: 32px
+}
+
+.tecdoc-article__brand-quality:before {
+    background-size: cover;
+    content: "";
+    height: 18px;
+    width: 18px
+}
+
+.tecdoc-article__brand-quality:hover .tecdoc-article__tooltip {
+    visibility: visible;
+    opacity: 1
+}
+
+.tecdoc-article__brand-quality--economy {
+    background-color: #d2ffd9
+}
+
+.tecdoc-article__brand-quality--economy:before {
+    background-image: url(../../img/icons/economy.svg)
+}
+
+.tecdoc-article__brand-quality--medium {
+    background-color: #b8e6ff
+}
+
+.tecdoc-article__brand-quality--medium:before {
+    background-image: url(../../img/icons/medium.svg)
+}
+
+.tecdoc-article__brand-quality--premium {
+    background-color: #fff7e6
+}
+
+.tecdoc-article__brand-quality--premium:before {
+    background-image: url(../../img/icons/premium.svg)
+}
+
+.tecdoc-article__brand-quality--original {
+    background-color: #ffd4e6
+}
+
+.tecdoc-article__brand-quality--original:before {
+    background-image: url(../../img/icons/original.svg)
+}
+
+.tecdoc-article__row {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    justify-content: space-between
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article__row {
+        flex-direction: row;
+        gap: 32px
+    }
+}
+
+.tecdoc-article__images {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center
+}
+
+.tecdoc-article__image {
+    aspect-ratio: 2 / 1.25;
+    object-fit: contain;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%
+}
+
+.tecdoc-article__cover-image {
+    border-radius: 16px;
+    border: 1px solid var(--tecdoc-border-color);
+    padding: 16px;
+    width: 100%
+}
+
+.tecdoc-article__thumbnails {
+    width: 100%
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+    .tecdoc-article__thumbnails {
+        max-width: 500px
+    }
+}
+
+.tecdoc-article__thumbnail {
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--tecdoc-border-color);
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 60px
+}
+
+.tecdoc-article__thumbnail .tecdoc-article__image {
+    width: 40px;
+    height: 40px
+}
+
+.tecdoc-article__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.tecdoc-article__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: unset
+}
+
+.tecdoc-article__title .tecdoc-article__link {
+    transition: .15s
+}
+
+.tecdoc-article__title .tecdoc-article__link:hover {
+    color: var(--tecdoc-primary-color)
+}
+
+.tecdoc-article__metas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article__metas {
+        gap: 8px
+    }
+}
+
+.tecdoc-article__meta {
+    color: var(--tecdoc-text-light-color);
+    display: flex;
+    font-size: 14px;
+    gap: 4px
+}
+
+.tecdoc-article__meta-title {
+    align-items: center;
+    display: flex;
+    font-weight: 500
+}
+
+.tecdoc-article__meta-title:before {
+    background: var(--tecdoc-primary-color);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 5px;
+    margin-right: 6px;
+    width: 5px
+}
+
+.tecdoc-article__attribute {
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    gap: 12px;
+    justify-content: space-between;
+    padding: 8px
+}
+
+.tecdoc-article__attribute:nth-child(odd) {
+    background-color: var(--tecdoc-background-color)
+}
+
+.tecdoc-article__attribute-title {
+    font-weight: 500
+}
+
+.tecdoc-article__attribute-value {
+    text-align: right
+}
+
+.tecdoc-article__availability {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 26px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article__availability {
+        align-items: flex-end
+    }
+}
+
+.tecdoc-article__badges {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.tecdoc-article__badge {
+    align-items: center;
+    background-color: var(--tecdoc-background-color);
+    border-radius: 100px;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 7px 12px;
+    gap: 8px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article__badge {
+        font-size: 14px;
+        padding: 8px 16px
+    }
+}
+
+.tecdoc-article__badge:before {
+    background-size: cover;
+    content: "";
+    flex-shrink: 0;
+    height: 18px;
+    width: 18px
+}
+
+.tecdoc-article__badge--in-stock {
+    background-color: #d2ffd9;
+    color: #0db428
+}
+
+.tecdoc-article__badge--in-stock:before {
+    background-image: url(../../img/icons/in-stock.svg)
+}
+
+.tecdoc-article__badge--out-of-stock {
+    background-color: #ffe2e7;
+    color: #d80027
+}
+
+.tecdoc-article__badge--out-of-stock:before {
+    background-image: url(../../img/icons/out-of-stock.svg);
+    height: 19px
+}
+
+.tecdoc-article__badge--discount {
+    background-color: #ffefe6;
+    color: #ff5c00
+}
+
+.tecdoc-article__badge--discount:before {
+    background-image: url(../../img/icons/hot.svg)
+}
+
+.tecdoc-article__badge--delivery {
+    background-color: #f6f0ff;
+    color: #7634e2
+}
+
+.tecdoc-article__badge--delivery:before {
+    background-image: url(../../img/icons/truck.svg);
+    filter: brightness(0) saturate(100%) invert(24%) sepia(54%) saturate(3851%) hue-rotate(254deg) brightness(88%) contrast(101%)
+}
+
+.tecdoc-article__prices-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-article__prices-wrapper {
+        align-items: flex-end
+    }
+}
+
+.tecdoc-article__prices {
+    align-items: flex-end;
+    display: flex;
+    gap: 8px;
+    line-height: 1
+}
+
+.tecdoc-article__price {
+    font-size: 32px;
+    font-weight: 600
+}
+
+.tecdoc-article__price--discount {
+    color: #ff5c00
+}
+
+.tecdoc-article__old-price {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: line-through
+}
+
+.tecdoc-article__deposit {
+    color: var(--tecdoc-text-light-color);
+    font-size: 12px;
+    font-weight: 500
+}
+
+.tecdoc-article__delivery-time {
+    font-size: 13px;
+    color: #a8a8a8
+}
+
+.tecdoc-article__availability-options {
+    max-width: 530px
+}
+
+.tecdoc-assembly-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-assembly-group {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    justify-content: center
+}
+
+.tecdoc-assembly-group__row {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    width: 100%
+}
+
+.tecdoc-assembly-group__subgroups {
+    padding: 0 18px;
+    width: 100%
+}
+
+.tecdoc-assembly-group__toggle:after {
+    background-image: url(../../img/icons/plus.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    content: '';
+    display: flex;
+    flex-shrink: 0;
+    height: 20px;
+    width: 20px
+}
+
+.tecdoc-assembly-group__toggle--expanded:after {
+    background-image: url(../../img/icons/minus.svg)
+}
+
+.tecdoc-assembly-group__image {
+    height: 100px
+}
+
+.tecdoc-assembly-group__title {
+    font-weight: 500;
+    text-align: center
+}
+
+.tecdoc-assembly-group__link--active {
+    font-weight: 600
+}
+
+.tecdoc-assembly-group--small {
+    align-items: start;
+    font-size: 14px;
+    gap: 8px;
+    padding: 6px 0;
+    text-align: unset;
+    width: 100%
+}
+
+.tecdoc-assembly-subgroups {
+    display: flex;
+    flex-direction: column;
+    gap: 36px
+}
+
+.tecdoc-assembly-subgroups__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px
+}
+
+.tecdoc-assembly-subgroups__heading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1
+}
+
+.tecdoc-assembly-subgroups__grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns:repeat(1, 1fr)
+}
+
+@media (min-width: 576px) {
+    .tecdoc-assembly-subgroups__grid {
+        grid-template-columns:repeat(2, 1fr)
+    }
+}
+
+@media (min-width: 768px) {
+    .tecdoc-assembly-subgroups__grid {
+        grid-template-columns:repeat(3, 1fr)
+    }
+}
+
+@media (min-width: 992px) {
+    .tecdoc-assembly-subgroups__grid {
+        grid-template-columns:repeat(4, 1fr)
+    }
+}
+
+.tecdoc-assembly-subgroup__title {
+    color: var(--tecdoc-primary-color);
+    font-size: 14px;
+    font-weight: 500
+}
+
+.tecdoc-linkage-target-types {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+@media (min-width: 768px) {
+    .tecdoc-linkage-target-types {
+        align-items: unset;
+        flex-direction: row;
+        gap: 24px
+    }
+}
+
+.tecdoc-linkage-target-type {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 40px;
+    border: 1px solid var(--tecdoc-border-color);
+    color: #a8a8a8;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 8px 24px;
+    transition: .15s;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-linkage-target-type:before {
+    background-size: cover;
+    content: ""
+}
+
+.tecdoc-linkage-target-type--passenger:before {
+    background-image: url(../../img/icons/passenger.svg);
+    height: 12px;
+    width: 24px
+}
+
+.tecdoc-linkage-target-type--commercial:before {
+    background-image: url(../../img/icons/commercial.svg);
+    height: 24px;
+    width: 24px
+}
+
+.tecdoc-linkage-target-type--motorcycle:before {
+    background-image: url(../../img/icons/motorcycle.svg);
+    height: 24px;
+    width: 24px
+}
+
+.tecdoc-linkage-target-type--active,
+.tecdoc-linkage-target-type:hover {
+    background-color: var(--tecdoc-primary-color);
+    border-color: var(--tecdoc-primary-color);
+    color: #fff
+}
+
+.tecdoc-linkage-target-type--active:before,
+.tecdoc-linkage-target-type:hover:before {
+    filter: brightness(0) invert(1)
+}
+
+.tecdoc-linkage-target-type__name {
+    flex-shrink: 0
+}
+
+.tecdoc-alphabetical-filter {
+    display: flex;
+    gap: 10px;
+    overflow: auto
+}
+
+.tecdoc-alphabetical-filter__item {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid var(--tecdoc-border-color);
+    color: #a8a8a8;
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+    transition: .15s;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+@media (max-width: 1200px) {
+    .tecdoc-alphabetical-filter__item {
+        min-width: 40px
+    }
+}
+
+.tecdoc-alphabetical-filter__item--active,
+.tecdoc-alphabetical-filter__item:hover {
+    background-color: var(--tecdoc-primary-color);
+    border-color: var(--tecdoc-primary-color);
+    color: #fff !important
+}
+
+.tecdoc-models {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-model {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 24px
+}
+
+.tecdoc-model__image {
+    height: 60px
+}
+
+.tecdoc-model__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1
+}
+
+.tecdoc-model__years,
+.tecdoc-model__toggle {
+    color: var(--tecdoc-label-color);
+    font-size: 14px;
+    line-height: 1
+}
+
+.tecdoc-grouped-models {
+    display: grid;
+    gap: 24px;
+    grid-template-columns:repeat(1, 1fr)
+}
+
+@media (min-width: 576px) {
+    .tecdoc-grouped-models {
+        grid-template-columns:repeat(2, 1fr)
+    }
+}
+
+@media (min-width: 768px) {
+    .tecdoc-grouped-models {
+        grid-template-columns:repeat(3, 1fr)
+    }
+}
+
+@media (min-width: 992px) {
+    .tecdoc-grouped-models {
+        grid-template-columns:repeat(4, 1fr)
+    }
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-grouped-models {
+        grid-template-columns:repeat(5, 1fr)
+    }
+}
+
+.tecdoc-grouped-model {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.tecdoc-grouped-model__title {
+    color: var(--tecdoc-primary-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1
+}
+
+.tecdoc-grouped-model__years {
+    color: var(--tecdoc-label-color);
+    font-size: 14px;
+    line-height: 1
+}
+
+.tecdoc-year-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 22px
+}
+
+.tecdoc-year-filter__heading {
+    font-weight: 500
+}
+
+.tecdoc-year-filter__decades {
+    background-color: var(--tecdoc-background-color);
+    border-radius: 16px;
+    display: grid;
+    font-size: 14px;
+    gap: 24px;
+    padding: 22px;
+    position: relative
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-year-filter__decades {
+        grid-template-columns:repeat(2, 1fr);
+        gap: 12px
+    }
+}
+
+.tecdoc-year-filter__decades:before {
+    border-bottom: 10px solid #F3F8FD;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    left: 50px;
+    position: absolute;
+    top: -9px
+}
+
+.tecdoc-year-filter__decade {
+    display: flex;
+    gap: 36px
+}
+
+.tecdoc-year-filter__years {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.tecdoc-year-filter__year {
+    color: var(--tecdoc-primary-color);
+    font-weight: 500;
+    width: 36px
+}
+
+.tecdoc-year-filter__year--active {
+    text-decoration: underline !important
+}
+
+.tecdoc-vehicles__list {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid var(--tecdoc-border-color)
+}
+
+.tecdoc-vehicles__item {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    gap: 16px;
+    padding: 24px
+}
+
+.tecdoc-vehicles__item:not(:last-child) {
+    border-bottom: 1px solid var(--tecdoc-border-color)
+}
+
+@media (min-width: 992px) {
+    .tecdoc-vehicles__item {
+        flex-wrap: nowrap;
+        gap: 32px;
+        margin: 0 24px;
+        padding: 18px 0
+    }
+}
+
+.tecdoc-vehicles__item--header {
+    display: none;
+    font-weight: 500
+}
+
+@media (min-width: 992px) {
+    .tecdoc-vehicles__item--header {
+        display: flex
+    }
+}
+
+.tecdoc-vehicles__item--header .tecdoc-vehicles__field {
+    justify-content: start
+}
+
+.tecdoc-vehicles__item--header .tecdoc-vehicles__field:before {
+    background-size: cover;
+    content: "";
+    display: block;
+    filter: var(--tecdoc-primary-filter);
+    flex-shrink: 0;
+    height: 20px;
+    width: 20px
+}
+
+.tecdoc-vehicles__item--header .tecdoc-vehicles__field--vehicle:before {
+    background-image: url(../../img/icons/vehicle.svg)
+}
+
+.tecdoc-vehicles__item--header .tecdoc-vehicles__field--engine:before {
+    background-image: url(../../img/icons/engine.svg)
+}
+
+.tecdoc-vehicles__item--header .tecdoc-vehicles__field--fuel:before {
+    background-image: url(../../img/icons/fuel.svg)
+}
+
+.tecdoc-vehicles__item--header .tecdoc-vehicles__field--year:before {
+    background-image: url(../../img/icons/calendar.svg)
+}
+
+.tecdoc-vehicles__item--header .tecdoc-vehicles__field--power:before {
+    background-image: url(../../img/icons/power.svg)
+}
+
+.tecdoc-vehicles__item--header .tecdoc-vehicles__field--drive:before {
+    background-image: url(../../img/icons/drive.svg)
+}
+
+.tecdoc-vehicles__field {
+	align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    width: 100%
+}
+
+@media (min-width: 992px) {
+    .tecdoc-vehicles__field--vehicle,
+    .tecdoc-vehicles__field--engine {
+        width: 20%
+    }
+
+    .tecdoc-vehicles__field--fuel,
+    .tecdoc-vehicles__field--year,
+    .tecdoc-vehicles__field--power {
+        width: 15%
+    }
+
+    .tecdoc-vehicles__field--drive {
+        width: 20%
+    }
+
+    .tecdoc-vehicles__field--link {
+        width: 10%;
+        justify-content: end
+    }
+}
+
+.tecdoc-vehicles__title {
+    flex: 1;
+    font-weight: 500
+}
+
+@media (min-width: 992px) {
+    .tecdoc-vehicles__title {
+        display: none
+    }
+}
+
+.tecdoc-vehicles__value {
+    flex: 1;
+    text-align: right
+}
+
+@media (min-width: 992px) {
+    .tecdoc-vehicles__value {
+        text-align: left
+    }
+}
+
+.tecdoc-vehicles__link {
+    align-items: center;
+    color: var(--tecdoc-primary-color);
+    display: flex;
+    font-weight: 600;
+    gap: 8px
+}
+
+.tecdoc-vehicles__link:after {
+    background-image: url(../../img/icons/chevron-right-light.svg);
+    content: "";
+    filter: var(--tecdoc-primary-filter);
+    height: 14px;
+    width: 14px
+}
+
+.tecdoc-vehicle {
+    background-color: var(--tecdoc-background-color);
+    border-radius: 20px;
+    padding: 22px
+}
+
+.tecdoc-vehicle__grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(1, 1fr)
+}
+
+@media (min-width: 992px) {
+    .tecdoc-vehicle__grid {
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .layout-left-column .tecdoc-vehicle__grid,
+    .layout-right-column .tecdoc-vehicle__grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+.tecdoc-vehicle__information {
+    display: flex;
+    font-size: 14px;
+    gap: 6px;
+    line-height: 1.5
+}
+
+.tecdoc-vehicle__title {
+    font-weight: 600
+}
+
+.tecdoc-vehicle__value {
+    color: var(--tecdoc-primary-color);
+    display: flex;
+    gap: 6px
+}
+
+.tecdoc-vehicle__motor-codes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px
+}
+
+.tecdoc-page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.tecdoc-page-header {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 16px;
+    justify-content: space-between
+}
+
+.tecdoc-page-header__column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.tecdoc-page-header__column--full {
+    align-items: center;
+    flex: 1
+}
+
+.tecdoc-page-header__heading {
+    font-size: 26px;
+    text-transform: uppercase
+}
+
+.tecdoc-page-header__subheading {
+    color: var(--tecdoc-text-light-color);
+    font-size: 14px
+}
+
+.tecdoc-page-header__manufacturer-image {
+    display: none;
+    height: 56px;
+    width: 56px
+}
+
+@media (min-width: 768px) {
+    .tecdoc-page-header__manufacturer-image {
+        display: block;
+    }
+}
+
+.tecdoc-page-header__assembly-group-image {
+    height: 300px;
+    width: 300px
+}
+
+.tecdoc-brands__grid {
+    gap: 32px;
+    grid-template-columns:repeat(2, 1fr)
+}
+
+@media (min-width: 576px) {
+    .tecdoc-brands__grid {
+        grid-template-columns:repeat(3, 1fr)
+    }
+}
+
+@media (min-width: 768px) {
+    .tecdoc-brands__grid {
+        grid-template-columns:repeat(4, 1fr)
+    }
+}
+
+@media (min-width: 992px) {
+    .tecdoc-brands__grid {
+        grid-template-columns:repeat(8, 1fr)
+    }
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-brands__grid {
+        grid-template-columns:repeat(10, 1fr)
+    }
+}
+
+.tecdoc-brand {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.tecdoc-manufacturers {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-manufacturers__grid {
+        grid-template-columns:repeat(4, 1fr)
+    }
+}
+
+.tecdoc-manufacturer {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    text-align: left
+}
+
+.tecdoc-manufacturer__image {
+    height: 40px;
+    width: 40px
+}
+
+.tecdoc-manufacturer__title {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.tecdoc-manufacturer__chevron {
+    align-items: center;
+    background-color: var(--tecdoc-background-color);
+    border-radius: 6px;
+    display: flex;
+    flex-shrink: 0;
+    height: 24px;
+    justify-content: center;
+    margin-left: auto;
+    width: 24px
+}
+
+.tecdoc-manufacturer__chevron:before {
+    background-image: url(../../img/icons/chevron-right-light.svg);
+    background-size: cover;
+    content: "";
+    filter: var(--tecdoc-primary-filter);
+    height: 13px;
+    width: 13px
+}
+
+.tecdoc-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px
+}
+
+.tecdoc-widget {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-search-form {
+    -webkit-user-select: none;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 32px;
+    border: 1px solid var(--tecdoc-border-color);
+    display: flex;
+    gap: 18px;
+    user-select: none
+}
+
+.tecdoc-search-form__input-wrapper {
+    align-items: center;
+    display: flex;
+    flex-grow: 1
+}
+
+.tecdoc-search-form__input-wrapper:after {
+    background-color: var(--tecdoc-border-color);
+    content: "";
+    height: 20px;
+    width: 1px
+}
+
+.tecdoc-search-form__input {
+    background: unset;
+    border: unset;
+    color: #333;
+    line-height: 1;
+    outline: unset;
+    padding: 12px 18px;
+    width: 100%
+}
+
+.tecdoc-search-form__search-type {
+    flex-shrink: 0
+}
+
+.tecdoc-search-form__submit {
+    align-items: center;
+    background-color: var(--tecdoc-primary-color);
+    border-radius: 50%;
+    border: unset;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    height: 32px;
+    justify-content: center;
+    margin-right: 6px;
+    outline: unset !important;
+    padding: unset;
+    transition: .15s;
+    width: 32px
+}
+
+.tecdoc-search-form__submit:after {
+    background-image: url(../../img/icons/search.svg);
+    background-size: cover;
+    content: "";
+    display: block;
+    filter: brightness(0) invert(1);
+    height: 18px;
+    width: 18px
+}
+
+.tecdoc-search-form__submit:hover {
+    opacity: .9
+}
+
+.tecdoc-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 44px 0
+}
+
+@media (min-width: 992px) {
+    .tecdoc-inside {
+        align-items: center;
+        flex-direction: row;
+        gap: 44px
+    }
+}
+
+.tecdoc-inside__image {
+    width: 175px
+}
+
+.tecdoc-inside__text {
+    font-size: 14px;
+    line-height: 18px
+}
+
+.tecdoc-vehicle-search {
+    background-color: #11011c;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px
+}
+
+.tecdoc-vehicle-search__type {
+    font-size: 16px
+}
+
+@media (min-width: 992px) {
+    .tecdoc-vehicle-search {
+        max-width: 400px
+    }
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-vehicle-search--horizontal {
+        gap: 40px;
+        margin: 0 auto;
+        max-width: unset;
+        width: 1100px
+    }
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__header {
+        align-items: center;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: space-between
+    }
+}
+
+.tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__type {
+    padding: 10px 36px
+}
+
+.tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__form {
+    justify-content: center
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-vehicle-search--horizontal .tecdoc-linkage-target-types {
+        align-self: center;
+        width: 85%
+    }
+
+    .tecdoc-vehicle-search--horizontal .tecdoc-linkage-target-type__name {
+        display: block !important
+    }
+
+    .tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__fields {
+        flex-direction: row;
+        justify-content: center
+    }
+
+    .tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__option--by-steps .tecdoc-vehicle-search__fields {
+        gap: 8px;
+        justify-content: space-between
+    }
+
+    .tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__option--by-steps .tecdoc-vehicle-search__fields > * {
+        border-radius: 0
+    }
+
+    .tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__option--by-steps .tecdoc-vehicle-search__fields > *:first-child {
+        border-bottom-left-radius: 24px;
+        border-top-left-radius: 24px
+    }
+
+    .tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__option--by-steps .tecdoc-vehicle-search__fields > *:last-child {
+        border-bottom-right-radius: 24px;
+        border-top-right-radius: 24px
+    }
+}
+
+.tecdoc-vehicle-search--horizontal .tecdoc-vehicle-search__button {
+    width: auto
+}
+
+.tecdoc-vehicle-search__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.tecdoc-vehicle-search__heading {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    gap: 16px
+}
+
+.tecdoc-vehicle-search__heading:before {
+    background-image: url(../../img/icons/wheel.svg);
+    background-size: cover;
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    height: 49px;
+    width: 48px
+}
+
+@media (min-width: 1200px) {
+    .tecdoc-vehicle-search__heading {
+        font-size: 24px
+    }
+}
+
+.tecdoc-vehicle-search__types {
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-vehicle-search__type {
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    color: #d5dfe7;
+    cursor: pointer;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-weight: 600;
+    gap: 8px;
+    justify-content: center;
+    padding: 10px 12px;
+    text-align: center;
+    transition: .15s
+}
+
+.tecdoc-vehicle-search__type:first-child {
+    border-left: 1px solid #fff;
+    border-bottom-left-radius: 32px;
+    border-top-left-radius: 32px
+}
+
+.tecdoc-vehicle-search__type:last-child {
+    border-bottom-right-radius: 32px;
+    border-top-right-radius: 32px
+}
+
+.tecdoc-vehicle-search__type--active {
+    color: var(--tecdoc-primary-color);
+    background-color: #fff
+}
+
+.tecdoc-vehicle-search__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: unset
+}
+
+.tecdoc-vehicle-search__linkage-target-types {
+    align-items: unset;
+    border-radius: 6px;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    overflow: hidden
+}
+
+.tecdoc-vehicle-search__linkage-target-types .tecdoc-linkage-target-type {
+    border-radius: unset;
+    border: unset;
+    flex: 1
+}
+
+.tecdoc-vehicle-search__linkage-target-types .tecdoc-linkage-target-type__name {
+    display: none
+}
+
+.tecdoc-vehicle-search__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.tecdoc-vehicle-search__field {
+    background-color: var(--tecdoc-background-color);
+    border-radius: 6px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tecdoc-vehicle-search__input {
+    background: unset;
+    border: unset;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    height: 48px;
+    outline: unset;
+    padding: 12px 18px;
+    width: 100%
+}
+
+.tecdoc-vehicle-search__selector {
+    width: 100%
+}
+
+.tecdoc-vehicle-search__button {
+    height: 48px;
+    width: 100%
+}
+
+.tecdoc-vehicle-search__backdrop {
+    background-color: #F4A424;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 998
+}
+
+.tecdoc-reassurance__item {
+    align-items: center;
+    border-top: 1px solid var(--tecdoc-border-color);
+    display: flex;
+    gap: 16px;
+    padding: 14px 0
+}
+
+.tecdoc-reassurance__icon path {
+    stroke: var(--tecdoc-primary-color)
+}
+
+.tecdoc-reassurance__content {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.tecdoc-scroll::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+    border-radius: 16px
+}
+
+.tecdoc-scroll::-webkit-scrollbar {
+    border-radius: 50%;
+    width: 4px
+}
+
+.tecdoc-scroll::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+    border-radius: 16px
+}

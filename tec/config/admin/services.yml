@@ -1,0 +1,35 @@
+imports:
+  - { resource: ../common.yml }
+  - { resource: kpi.yml }
+
+services:
+  _defaults:
+    public: true
+
+  it_premium.tecdoc.install.installer:
+    class: ItPremium\TecDoc\Install\Installer
+    arguments:
+      - '@prestashop.core.admin.tab.repository'
+      - '@doctrine.dbal.default_connection'
+      - '%database_prefix%'
+
+  it_premium.tecdoc.install.uninstaller:
+    class: ItPremium\TecDoc\Install\Uninstaller
+    arguments:
+      - '@prestashop.core.admin.tab.repository'
+      - '@doctrine.dbal.default_connection'
+      - '%database_prefix%'
+
+  it_premium.tecdoc.service.import:
+    class: ItPremium\TecDoc\Service\Import\ImportService
+    arguments:
+      - '@it_premium.tecdoc.repository.stock'
+      - '@it_premium.tecdoc.repository.supplier'
+      - '@translator'
+
+  it_premium.tecdoc.service.import.file_upload:
+    class: ItPremium\TecDoc\Service\Import\FileUploadService
+    arguments:
+      - '@it_premium.tecdoc.repository.stock'
+      - '@it_premium.tecdoc.repository.supplier'
+      - '@translator'
